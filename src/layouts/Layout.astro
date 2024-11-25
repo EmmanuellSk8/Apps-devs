@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import '@fontsource/poppins';
 ---
 
 <!doctype html>
@@ -33,7 +34,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "poppins", sans-serif;
 		background: #13151a;
 	}
 	code {
