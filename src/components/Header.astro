@@ -1,0 +1,100 @@
+---
+import DarkModeIcon from "./icons/DarkModeIcon.astro";
+import LightModeIcon from "./icons/LightModeIcon.astro";
+---
+
+<script>
+    const DarkModeIcon = document.getElementById("DarkModeIcon");
+    const LightModeIcon = document.getElementById("LightModeIcon");
+    const body = document.body;
+
+    LightModeIcon.addEventListener("click", () => {
+        LightModeIcon.classList.add("hidden");
+        DarkModeIcon.classList.remove("hidden");
+    });
+
+    DarkModeIcon.addEventListener("click", () => {
+        DarkModeIcon.classList.add("hidden");
+        LightModeIcon.classList.remove("hidden");
+    });
+
+    if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        body.classList.add("dark-mode");
+    } else {
+        body.classList.add("light-mode");
+    }
+
+    function toggleMode() {
+        if (body.classList.contains("light-mode")) {
+            body.classList.remove("light-mode");
+            body.classList.add("dark-mode");
+        } else {
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+        }
+    }
+
+    DarkModeIcon.addEventListener("click", toggleMode);
+    LightModeIcon.addEventListener("click", toggleMode);
+</script>
+
+<style>
+    .hidden {
+        display: none;
+    }
+
+    :root {
+        --light-gradient: radial-gradient(
+            100% 50% at 50% 0%,
+            rgba(0, 163, 255, 0.13) 0%,
+            rgba(0, 163, 255, 0) 50%,
+            rgba(0, 163, 255, 0) 100%
+        );
+        --dark-gradient: radial-gradient(
+            100% 100% at 50% 0%,
+            rgba(255, 255, 255, 0.13) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+
+    body {
+        background-color: var(--background-color);
+        background-image: var(--background-gradient);
+    }
+
+    body.light-mode {
+        --background-color: white;
+        --background-gradient: var(--light-gradient);
+        color: #121212;
+    }
+
+    body.dark-mode {
+        --background-color: #121212;
+        --background-gradient: var(--dark-gradient);
+        color: white;
+    }
+</style>
+
+<header class="flex gap-x-36 justify-around">
+    <ul class="flex gap-x-10 top-2 absolute">
+        <li class="hover:cursor-pointer">Extensiones</li>
+        <li class="hover:cursor-pointer">Páginas</li>
+        <li class="hover:cursor-pointer">APIS</li>
+    </ul>
+
+    <div class="flex right-2 top-2 absolute gap-x-2 items-center">
+        <div>
+            <LightModeIcon id="DarkModeIcon" class="hover:cursor-pointer" />
+            <DarkModeIcon
+                id="LightModeIcon"
+                class="hover:cursor-pointer hidden"
+            />
+        </div>
+
+        <span class="text-xl">AppsDevs</span>
+    </div>
+</header>
