@@ -1,0 +1,32 @@
+---
+import RedirectLinkIcon from "./icons/RedirectLinkIcon.astro";
+---
+
+<style>
+    article{
+        background-image: url(../public/img/fondo-cards-white.png);
+        color: #000;
+        border-radius: 8px;Z
+    }
+
+    
+</style>
+
+<article class="w-80 border-white border-2 p-4 m-11">
+    <div class="flex justify-between mx-10 mb-4">
+        <span>title <slot /> </span>
+        <RedirectLinkIcon />
+    </div>
+        <img src="../public/img/logoBlack.png" alt="" />
+        <slot />
+        <p>
+            <slot />Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Officiis voluptates eos, culpa modi consequuntur non necessitatibus
+            tempore impedit ab dolorum doloremque obcaecati, suscipit
+            consectetur architecto, incidunt ut. Animi, perferendis architecto?
+        </p>
+
+
+</article>
+
+<img src="../public/img/fondo-cards.png" alt="" />
