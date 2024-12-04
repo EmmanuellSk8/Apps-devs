@@ -1,22 +1,48 @@
 ---
 import SearchIcon from "./icons/SearchIcon.astro";
+import PostSearch from "./PostSearch.astro";
 ---
 
-<div class="justify-center items-center ml-3 mt-20 flex gap-x-1">
-    <select name="" id="" class="bg-white text-black rounded-sm">
+<div class="justify-center items-center ml-3 mt-24 flex gap-x-1">
+    <select id="categorySelect" class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black">
         <option value="" hidden>Todas las categorías</option>
-        <option value="">Extensiones</option>
-        <option value="">Páginas</option>
-        <option value="">APIS</option>
+        <option value="Extensiones">Extensiones</option>
+        <option value="Paginas">Páginas</option>
+        <option value="APIS">APIS</option>
     </select>
 
-        <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Buscar..."
-            class="text-black bg-white pl-2 rounded-sm w-2/4"
-        />
-        <button class=""> <SearchIcon /> </button>
-  
+    <input
+        type="text"
+        placeholder="Buscar..."
+        class="text-black bg-white pl-2 rounded-sm w-2/4  py-2 px-2 border-2 border-black"
+    />
+    <button class=""><SearchIcon/ class="hover:scale-125 duration-300"></button>
+
+    
 </div>
+<PostSearch/>
+<div id="category" class="text-4xl mt-10 ml-20">Todas las categorías</div>
+
+
+
+<script>
+
+const categorySelect = document.getElementById("categorySelect") as HTMLSelectElement;
+
+
+if (categorySelect) {
+    categorySelect.addEventListener("change", () => {
+        const selectedCategory = categorySelect.value; // Obtén el valor seleccionado
+        const categoryElement = document.getElementById("category");
+
+        // Verifica si el div "category" existe
+        if (categoryElement) {
+            categoryElement.textContent = selectedCategory || "Todas las categorías";
+        }
+    });
+    
+} else {
+    console.error("El elemento no se encontró");
+}
+
+</script>

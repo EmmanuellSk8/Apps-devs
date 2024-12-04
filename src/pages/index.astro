@@ -6,13 +6,16 @@ import Card from "../components/Card.astro";
 import RedirectLinkIcon from "../components/icons/RedirectLinkIcon.astro";
 import ContainerCards from "../components/ContainerCards.astro";
 import Search from "../components/Search.astro";
-
+import PostSearch from "../components/PostSearch.astro";
 ---
 
 <Layout title="AppsDevs">
   <main>
     <Header />
-   <Search/>
+
+    <Search />
+
+    <ContainerCards />
   </main>
 </Layout>
 
@@ -32,7 +35,6 @@ import Search from "../components/Search.astro";
     background-color: var(--background-color);
     background-image: var(--background-gradient);
     color: var(--text-color);
-    
   }
 
   :root {
@@ -50,6 +52,7 @@ import Search from "../components/Search.astro";
       );
       --text-color: white;
     }
+
   }
 
   @media (prefers-color-scheme: light) {
@@ -63,5 +66,10 @@ import Search from "../components/Search.astro";
       );
       --text-color: rgb(0, 0, 0);
     }
+
+    html{
+      background-color: white;
+    }
+
   }
 </style>

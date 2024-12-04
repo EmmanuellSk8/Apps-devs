@@ -64,34 +64,37 @@ import LightModeIcon from "./icons/LightModeIcon.astro";
     body {
         background-color: var(--background-color);
         background-image: var(--background-gradient);
+        
     }
 
     body.light-mode {
         --background-color: white;
         --background-gradient: var(--light-gradient);
         color: #121212;
+        height: 100%;
     }
 
     body.dark-mode {
         --background-color: #121212;
         --background-gradient: var(--dark-gradient);
         color: white;
+        height: 100%;
     }
 </style>
 
 <header class="flex gap-x-36 justify-around">
-    <ul class="flex gap-x-10 top-2 absolute">
-        <li class="hover:cursor-pointer">Extensiones</li>
-        <li class="hover:cursor-pointer">Páginas</li>
-        <li class="hover:cursor-pointer">APIS</li>
+    <ul class="flex gap-x-10 top-2 ">
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">Extensiones</li>
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">Páginas</li>
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">APIS</li>
     </ul>
 
     <div class="flex right-2 top-2 absolute gap-x-2 items-center">
         <div>
-            <LightModeIcon id="DarkModeIcon" class="hover:cursor-pointer" />
+            <LightModeIcon id="DarkModeIcon" class="hover:cursor-pointer hover:scale-125 duration-300" />
             <DarkModeIcon
                 id="LightModeIcon"
-                class="hover:cursor-pointer hidden"
+                class="hover:cursor-pointer hidden hover:scale-125 duration-300"
             />
         </div>
 
