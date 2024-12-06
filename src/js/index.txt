@@ -1,0 +1,48 @@
+---
+import { onCleanup } from 'astro';
+
+const cards = [
+  { id: 1, title: 'Card 1', text: 'Contenido de la tarjeta 1' },
+  { id: 2, title: 'Card 2', text: 'Contenido de la tarjeta 2' },
+  { id: 3, title: 'Card 3', text: 'Contenido de la tarjeta 3' },
+];
+
+---
+
+<section id="cards-container">
+  {cards.map(card => (
+    <article class="card" id={`card-${card.id}`} data-id={card.id}>
+      <span class="card-title">{card.title}</span>
+      <p class="card-text">{card.text}</p>
+    </article>
+  ))}
+</section>
+
+<script type="module">
+  // Aquí dentro va el código de filtrado
+  const searchInput = document.getElementById("search-input");
+  
+  document.addEventListener("keyup", (e) => {
+    if (e.target === searchInput) {
+      if (e.key === "Escape") e.target.value = "";
+
+      document.querySelectorAll(".card").forEach((card) => {
+        const text = card.querySelector(".card-text").textContent || "";
+        const title = card.querySelector(".card-title").textContent || "";
+        const searchTerm = e.target.value.toLowerCase();
+
+        // Si el texto o el título de la tarjeta incluye el valor de búsqueda
+        if (text.toLowerCase().includes(searchTerm) || title.toLowerCase().includes(searchTerm)) {
+          card.classList.remove("filter");
+        } else {
+          card.classList.add("filter");
+        }
+      });
+    }
+  });
+
+  // Cleanup para eliminar el event listener cuando ya no se use el componente
+  onCleanup(() => {
+    document.removeEventListener("keyup", () => {});
+  });
+</script>

@@ -13,10 +13,73 @@ import RedirectLinkIcon from "./icons/RedirectLinkIcon.astro";
         margin-inline: 2rem;
         
     }
+
+    img{
+        aspect-ratio: 2/1;
+    }
+
 </style>
+<script src="../js/index.js"></script>
 
 <section>
-    <Card>
+    <Card class="card">
+        <span slot="slot-title">The stocks 3</span>
+
+        <a href="https://v3.thestocks.im/" target="_blank">
+            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
+        </a>
+
+        <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="imágenes"
+            slot="slot-img"
+            class="rounded-md"
+        />
+
+        <p slot="slot-text" class="font-medium">
+           imagenes
+        </p>
+    </Card>
+
+    <Card  class="card">
+        <span slot="slot-title">The stocks 3</span>
+
+        <a href="https://v3.thestocks.im/" target="_blank">
+            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
+        </a>
+
+        <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+        />
+
+        <p slot="slot-text" class="font-medium">
+            animal
+        </p>
+    </Card>
+    
+    <Card class="card">
+        <span slot="slot-title">The stocks 3</span>
+
+        <a href="https://v3.thestocks.im/" target="_blank">
+            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
+        </a>
+
+        <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+        />
+
+        <p slot="slot-text" class="font-medium">
+            pero.
+        </p>
+    </Card>
+    
+    <Card class="card">
         <span slot="slot-title">The stocks 3</span>
 
         <a href="https://v3.thestocks.im/" target="_blank">
@@ -37,68 +100,8 @@ import RedirectLinkIcon from "./icons/RedirectLinkIcon.astro";
             una sola página.
         </p>
     </Card>
-
-    <Card>
-        <span slot="slot-title">The stocks 3</span>
-
-        <a href="https://v3.thestocks.im/" target="_blank">
-            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
-        </a>
-
-        <img
-            src="../public/img/paginas/the-stocks.png"
-            alt="Verifique su conexión a internet"
-            slot="slot-img"
-            class="rounded-md"
-        />
-
-        <p slot="slot-text" class="font-medium">
-            The Stocks es una plataforma que agrupa recursos gratuitos de
-            imágenes, videos, íconos y fuentes para diseñadores y
-            desarrolladores, facilitando el acceso a contenido de calidad desde
-            una sola página.
-        </p>
-    </Card><Card>
-        <span slot="slot-title">The stocks 3</span>
-
-        <a href="https://v3.thestocks.im/" target="_blank">
-            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
-        </a>
-
-        <img
-            src="../public/img/paginas/the-stocks.png"
-            alt="Verifique su conexión a internet"
-            slot="slot-img"
-            class="rounded-md"
-        />
-
-        <p slot="slot-text" class="font-medium">
-            The Stocks es una plataforma que agrupa recursos gratuitos de
-            imágenes, videos, íconos y fuentes para diseñadores y
-            desarrolladores, facilitando el acceso a contenido de calidad desde
-            una sola página.
-        </p>
-    </Card><Card>
-        <span slot="slot-title">The stocks 3</span>
-
-        <a href="https://v3.thestocks.im/" target="_blank">
-            <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300"/>
-        </a>
-
-        <img
-            src="../public/img/paginas/the-stocks.png"
-            alt="Verifique su conexión a internet"
-            slot="slot-img"
-            class="rounded-md"
-        />
-
-        <p slot="slot-text" class="font-medium">
-            The Stocks es una plataforma que agrupa recursos gratuitos de
-            imágenes, videos, íconos y fuentes para diseñadores y
-            desarrolladores, facilitando el acceso a contenido de calidad desde
-            una sola página.
-        </p>
-    </Card><Card>
+    
+    <Card class="card">
         <span slot="slot-title">The stocks 3</span>
 
         <a href="https://v3.thestocks.im/" target="_blank">

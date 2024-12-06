@@ -1,0 +1,251 @@
+---
+import Card from "./Card.astro";
+import RedirectLinkIcon from "./icons/RedirectLinkIcon.astro";
+import SearchIcon from "./icons/SearchIcon.astro";
+import PostSearch from "./PostSearch.astro";
+---
+
+<div class="justify-center items-center ml-3 mt-24 flex gap-x-1">
+    <select id="categorySelect"
+     class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black"
+   
+    >
+        <option value="" hidden>Todas las categorías</option>
+        <option value="Extensiones">Extensiones</option>
+        <option value="Paginas">Páginas</option>
+        <option value="APIS">APIS</option>
+    </select>
+
+    <input
+        type="search"
+        placeholder="Buscar..."
+        class="text-black bg-white pl-2 rounded-sm w-2/4  py-2 px-2 border-2 border-black"
+         id="search-input"
+    />
+    <button class=""><SearchIcon/ class="hover:scale-125 duration-300 size-8"></button>
+
+    
+</div>
+
+<PostSearch/>
+<div id="category" class="text-4xl mt-10 ml-20 font-medium">Todas las categorías</div>
+
+<script>
+
+const categorySelect = document.getElementById("categorySelect") as HTMLSelectElement;
+
+
+if (categorySelect) {
+    categorySelect.addEventListener("change", () => {
+        const selectedCategory = categorySelect.value;  
+        const categoryElement = document.getElementById("category");
+
+        if (categoryElement) {
+            categoryElement.textContent = selectedCategory || "Todas las categorías";
+        }
+    });
+    
+} else {
+    console.error("El elemento no se encontró");
+}
+
+</script>
+
+<style>
+
+    .filter{
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 300px));
+        width: auto;
+        align-items: center;
+        justify-content: space-around;
+        margin-inline: 2rem;
+        
+    }
+
+    img{
+        aspect-ratio: 2/1;
+    }
+
+</style>
+
+<section id="cards-container">
+
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stocks</p>
+    </article>
+    
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stocks</p>
+    </article>
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stocks</p>
+    </article>
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stocks</p>
+    </article>
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stzocks</p>
+    </article>
+    
+
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">the stocks</p>
+    </article>
+    
+    <article class="w-80 border-black border-2 p-4 m-11 card">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+                src="../public/img/paginas/the-stocks.png"
+                alt="Verifique su conexión a internet"
+                slot="slot-img"
+                class="rounded-md"
+            />
+        </div>
+    
+        <p class="card-text">imagnes</p>
+    </article>
+    
+    
+
+</section>
+
+<script type="module">
+   document.addEventListener("keyup", (e) => {
+    const searchInput = document.getElementById("search-input");
+    if (e.target === searchInput) {
+        const searchTerm = e.target.value.toLowerCase();
+
+        document.querySelectorAll(".card").forEach((card) => {
+            const title = card.querySelector(".card-title")?.textContent || "";
+            const text = card.querySelector(".card-text")?.textContent || "";
+
+            if (title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm)) {
+                card.classList.remove("filter");
+            } else {
+                card.classList.add("filter");
+            }
+        });
+    }
+});
+
+</script>
+
+<style>
+    .filter {
+        display: none;
+    }
+
+
+    .card{
+        background-image: url(../public/img/fondo-cards-white.png);
+        color: black;
+    }
+</style>

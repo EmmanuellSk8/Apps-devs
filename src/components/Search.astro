@@ -12,18 +12,18 @@ import PostSearch from "./PostSearch.astro";
     </select>
 
     <input
-        type="text"
+        type="search"
         placeholder="Buscar..."
         class="text-black bg-white pl-2 rounded-sm w-2/4  py-2 px-2 border-2 border-black"
+        
     />
-    <button class=""><SearchIcon/ class="hover:scale-125 duration-300"></button>
+    <button class=""><SearchIcon/ class="hover:scale-125 duration-300 size-8"></button>
 
     
 </div>
+
 <PostSearch/>
-<div id="category" class="text-4xl mt-10 ml-20">Todas las categorías</div>
-
-
+<div id="category" class="text-4xl mt-10 ml-20 font-medium">Todas las categorías</div>
 
 <script>
 
@@ -32,10 +32,9 @@ const categorySelect = document.getElementById("categorySelect") as HTMLSelectEl
 
 if (categorySelect) {
     categorySelect.addEventListener("change", () => {
-        const selectedCategory = categorySelect.value; // Obtén el valor seleccionado
+        const selectedCategory = categorySelect.value;  
         const categoryElement = document.getElementById("category");
 
-        // Verifica si el div "category" existe
         if (categoryElement) {
             categoryElement.textContent = selectedCategory || "Todas las categorías";
         }

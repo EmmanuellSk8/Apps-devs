@@ -42,6 +42,7 @@ import LightModeIcon from "./icons/LightModeIcon.astro";
 </script>
 
 <style>
+
     .hidden {
         display: none;
     }
@@ -83,22 +84,22 @@ import LightModeIcon from "./icons/LightModeIcon.astro";
 </style>
 
 <header class="flex gap-x-36 justify-around">
-    <ul class="flex gap-x-10 top-2 ">
-        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">Extensiones</li>
-        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">Páginas</li>
-        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300">APIS</li>
+    <ul class="flex gap-x-10 mt-4 absolute">
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl">Extensiones</li>
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl">Páginas</li>
+        <li class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl">APIS</li>
     </ul>
 
-    <div class="flex right-2 top-2 absolute gap-x-2 items-center">
+    <div class="flex right-2 mt-4 absolute gap-x-2 items-center">
         <div>
-            <LightModeIcon id="DarkModeIcon" class="hover:cursor-pointer hover:scale-125 duration-300" />
+            <LightModeIcon id="DarkModeIcon" class="hover:cursor-pointer size-7 hover:scale-125 duration-300" />
             <DarkModeIcon
                 id="LightModeIcon"
-                class="hover:cursor-pointer hidden hover:scale-125 duration-300"
+                class="hover:cursor-pointer size-7 hidden hover:scale-125 duration-300"
             />
         </div>
 
-        <span class="text-xl font-semibold">AppsDevs</span>
+        <span class="text-xl font-semibold cursor-pointer">AppsDevs</span>
         
     </div>
 </header>
