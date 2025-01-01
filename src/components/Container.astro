@@ -29,6 +29,263 @@ import PostSearch from "./PostSearch.astro";
 <PostSearch/>
 <div id="category" class="text-4xl mt-10 ml-20 font-medium">Todas las categorías</div>
 
+<style>
+    
+    .card{
+        background-image: url("./public/img/fondo-cards-white.png");
+        color: black;
+    }
+    
+    .filter{
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 300px));
+        width: auto;
+        align-items: center;
+        justify-content: space-around;
+        margin-inline: 2rem;
+        
+    }
+    
+    img{
+        aspect-ratio: 2/1;
+    }
+    
+    
+    .card-text{
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;    }
+</style>
+
+<section id="cards-container">
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+    
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+
+    <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+        <div class="flex justify-between mx-4 mb-4">
+            <span class="card-title font-semibold cursor-pointer">The stocks</span>
+            <a href="" target="_blank">
+                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
+            </a>
+        </div>
+    
+        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+            <img
+            src="../public/img/paginas/the-stocks.png"
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            />
+        </div>
+        <div class="w-full">
+
+            <p class="card-text">
+                The Stocks es una plataforma que agrupa recursos gratuitos de imágenes,
+                videos, íconos y fuentes para diseñadores, facilitando
+                el acceso a contenido de calidad desde una sola página.</p>
+            </div>
+    </article>
+</section>
+
+
+<script type="module">
+    document.addEventListener("keyup", (e) => {
+        const searchInput = document.getElementById("search-input");
+        if (e.target === searchInput) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            document.querySelectorAll(".card").forEach((card) => {
+                const title = card.querySelector(".card-title")?.textContent || "";
+                const text = card.querySelector(".card-text")?.textContent || "";
+                
+                if (title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm)) {
+                    card.classList.remove("filter");
+                } else {
+                card.classList.add("filter");
+            }
+        });
+    }
+});
+
+</script>
+
 <script>
 
 const categorySelect = document.getElementById("categorySelect") as HTMLSelectElement;
@@ -52,199 +309,4 @@ if (categorySelect) {
 
 <style>
 
-    .filter{
-        display: none;
-    }
-
-    section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 300px));
-        width: auto;
-        align-items: center;
-        justify-content: space-around;
-        margin-inline: 2rem;
-        
-    }
-
-    img{
-        aspect-ratio: 2/1;
-    }
-
-</style>
-
-<section id="cards-container">
-
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stocks</p>
-    </article>
-    
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stocks</p>
-    </article>
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stocks</p>
-    </article>
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stocks</p>
-    </article>
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stzocks</p>
-    </article>
-    
-
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">the stocks</p>
-    </article>
-    
-    <article class="w-80 border-black border-2 p-4 m-11 card">
-        <div class="flex justify-between mx-4 mb-4">
-            <span class="card-title font-semibold cursor-pointer">The stocks</span>
-            <a href="">
-                <RedirectLinkIcon slot="slot-link" class="hover:scale-125 duration-300" />
-            </a>
-        </div>
-    
-        <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
-            <img
-                src="../public/img/paginas/the-stocks.png"
-                alt="Verifique su conexión a internet"
-                slot="slot-img"
-                class="rounded-md"
-            />
-        </div>
-    
-        <p class="card-text">imagnes</p>
-    </article>
-    
-    
-
-</section>
-
-<script type="module">
-   document.addEventListener("keyup", (e) => {
-    const searchInput = document.getElementById("search-input");
-    if (e.target === searchInput) {
-        const searchTerm = e.target.value.toLowerCase();
-
-        document.querySelectorAll(".card").forEach((card) => {
-            const title = card.querySelector(".card-title")?.textContent || "";
-            const text = card.querySelector(".card-text")?.textContent || "";
-
-            if (title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm)) {
-                card.classList.remove("filter");
-            } else {
-                card.classList.add("filter");
-            }
-        });
-    }
-});
-
-</script>
-
-<style>
-    .filter {
-        display: none;
-    }
-
-
-    .card{
-        background-image: url(../public/img/fondo-cards-white.png);
-        color: black;
-    }
 </style>
