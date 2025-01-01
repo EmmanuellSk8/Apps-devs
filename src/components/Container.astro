@@ -6,9 +6,7 @@ import PostSearch from "./PostSearch.astro";
 
 <div class="justify-center items-center ml-3 mt-24 flex gap-x-1">
     <select id="categorySelect"
-     class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black"
-   
-    >
+     class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black">
         <option value="" hidden>Todas las categorías</option>
         <option value="Extensiones">Extensiones</option>
         <option value="Paginas">Páginas</option>
@@ -30,8 +28,9 @@ import PostSearch from "./PostSearch.astro";
 <div id="category" class="text-4xl mt-10 ml-20 font-medium">Todas las categorías</div>
 
 <style>
-    
+
     .card{
+        border-radius: 8px;
         background-image: url("./public/img/fondo-cards-white.png");
         color: black;
     }
@@ -58,7 +57,9 @@ import PostSearch from "./PostSearch.astro";
     .card-text{
         width: 100%;
         word-wrap: break-word;
-        overflow-wrap: break-word;    }
+        overflow-wrap: break-word; 
+    }
+    
 </style>
 
 <section id="cards-container">
