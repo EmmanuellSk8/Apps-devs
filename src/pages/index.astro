@@ -2,18 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import "@fontsource/poppins";
-import RedirectLinkIcon from "../components/icons/RedirectLinkIcon.astro";
-import Search from "../components/Search.astro";
-import PostSearch from "../components/PostSearch.astro";
 import Container from "../components/Container.astro";
-import Prueba from "../components/Prueba.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="AppsDevs">
   <main>
     <Header />
     <Container />
-
+    <Footer/>
   </main>
 </Layout>
 
@@ -21,11 +18,11 @@ import Prueba from "../components/Prueba.astro";
   main {
     font-family: "poppins", sans-serif;
   }
-
+  
   :root {
     color-scheme: light dark;
   }
-
+  
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,12 +31,12 @@ import Prueba from "../components/Prueba.astro";
     background-image: var(--background-gradient);
     color: var(--text-color);
   }
-
+  
   :root {
     --background-color: white;
     --text-color: black;
   }
-
+  
   @media (prefers-color-scheme: dark) {
     :root {
       --background-color: #161616;
@@ -47,10 +44,10 @@ import Prueba from "../components/Prueba.astro";
         ellipse 80% 80% at 50% -20%,
         rgba(161, 161, 161, 0.3),
         rgba(24, 23, 23, 0)
-      );
-      --text-color: white;
+        );
+        --text-color: white;
+      }
     }
-  }
 
   @media (prefers-color-scheme: light) {
     :root {
@@ -63,9 +60,10 @@ import Prueba from "../components/Prueba.astro";
       );
       --text-color: rgb(0, 0, 0);
     }
-
+    
     html {
       background-color: white;
     }
   }
-</style>
+
+  </style>
