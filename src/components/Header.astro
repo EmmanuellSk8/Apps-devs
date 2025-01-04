@@ -27,6 +27,7 @@ import MenuIcon from "./icons/MenuIcon.astro";
         LightModeIcon.classList.remove("hidden");
     });
 
+    
     if (
         window.matchMedia &&
         window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -48,6 +49,43 @@ import MenuIcon from "./icons/MenuIcon.astro";
 
     DarkModeIcon.addEventListener("click", toggleMode);
     LightModeIcon.addEventListener("click", toggleMode);
+
+    const DarkModeIconn = document.getElementById("DarkModeIconn");
+    const LightModeIconn = document.getElementById("LightModeIconn");
+    const bodyy = document.body;
+
+    LightModeIconn.addEventListener("click", () => {
+        LightModeIconn.classList.add("hidden");
+        DarkModeIconn.classList.remove("hidden");
+    });
+
+    DarkModeIconn.addEventListener("click", () => {
+        DarkModeIconn.classList.add("hidden");
+        LightModeIconn.classList.remove("hidden");
+    });
+
+
+    if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+        bodyy.classList.add("dark-mode");
+    } else {
+        bodyy.classList.add("light-mode");
+    }
+
+    function toggleModee() {
+        if (body.classList.contains("light-mode")) {
+            body.classList.remove("light-mode");
+            body.classList.add("dark-mode");
+        } else {
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+        }
+    }
+
+    DarkModeIconn.addEventListener("click", toggleModee);
+    LightModeIconn.addEventListener("click", toggleModee);
 </script>
 
 <style>
@@ -174,11 +212,11 @@ import MenuIcon from "./icons/MenuIcon.astro";
     <div class="flex right-2 mt-4 absolute gap-x-2 items-center">
         <div>
             <LightModeIcon
-                id="DarkModeIcon"
+                id="DarkModeIconn"
                 class="hover:cursor-pointer size-7 hover:scale-125 duration-300"
             />
             <DarkModeIcon
-                id="LightModeIcon"
+                id="LightModeIconn"
                 class="hover:cursor-pointer size-7 hidden hover:scale-125 duration-300"
             />
         </div>
