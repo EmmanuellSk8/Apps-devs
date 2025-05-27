@@ -1,0 +1,45 @@
+---
+import RedirectLinkIcon from "../components/icons/RedirectLinkIcon.astro";
+import P10015 from "../assets/img/paginas/10015.webp";
+---
+
+<script>
+    const data = "../src/assets/data/data.json";
+    const response = await fetch(data)
+        .then((res) => res.json())
+        .catch((err) => console.error("Error fetching JSON:", err));
+    console.log(response);
+</script>
+
+
+
+<article
+    class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md"
+>
+    <div class="flex justify-between mx-4 mb-4">
+        <span class="card-title font-semibold cursor-pointer">10015</span>
+        <a href="https://10015.io/" target="_blank">
+            <RedirectLinkIcon
+                slot="slot-link"
+                class="hover:scale-125 duration-300"
+            />
+        </a>
+    </div>
+
+    <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+        <img
+            src={P10015.src}
+            alt="Verifique su conexión a internet"
+            slot="slot-img"
+            class="rounded-md"
+            loading="lazy"
+        />
+    </div>
+    <div class="w-full">
+        <p class="card-text">
+            Colección de herramientas en línea para diseñadores y
+            desarrolladores, desde generación de gradientes hasta manipulación
+            de texto.
+        </p>
+    </div>
+</article>
