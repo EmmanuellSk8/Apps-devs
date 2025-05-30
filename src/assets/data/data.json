@@ -269,7 +269,7 @@
     "link": "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag",
     "img": "https://i.postimg.cc/5tddQ7LW/auto-close-tag.webp",
     "category": "extension",
-    "description": "Extensión para VS Code que completa automáticamente las etiquetas HTML y XML."
+    "description": "Extensión para visual studio code que completa automáticamente las etiquetas HTML y XML."
 },
 
 {
@@ -277,7 +277,7 @@
     "link": "https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja",
     "img": "https://i.postimg.cc/rF377nhR/console-ninja.webp",
     "category": "extension",
-    "description": "Extensión para depuración avanzada en la consola de JavaScript dentro de VS Code."
+    "description": "Extensión para depuración avanzada en la consola de JavaScript dentro de visual studio code."
 },
 
 {
@@ -293,7 +293,7 @@
     "link": "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview",
     "img": "https://i.postimg.cc/hjtCXTyq/image-preview.webp",
     "category": "extension",
-    "description": "Extensión que permite previsualizar imágenes directamente en el editor de VS Code."
+    "description": "Extensión que permite previsualizar imágenes directamente en el editor de visual studio code."
 },
 
 {
@@ -301,7 +301,7 @@
     "link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server",
     "img": "https://i.postimg.cc/L8kvvNGp/live-preview.webp",
     "category": "extension",
-    "description": "Extensión que permite previsualizar cambios en proyectos HTML directamente desde VS Code."
+    "description": "Extensión que permite previsualizar cambios en proyectos HTML directamente desde visual studio code."
 },
 
 {
@@ -315,7 +315,7 @@
 {
     "name": "AtroposJS",
     "link": "https://atroposjs.com",
-    "img": "",
+    "img": "https://i.postimg.cc/DfMhc0LJ/atropos.png",
     "category": "npm",
     "description": "es una biblioteca JavaScript ligera y sin dependencias para crear efectos de parallax 3D interactivos y responsivos"
 },
@@ -323,7 +323,7 @@
 {
     "name": "Splide",
     "link": "splidejs.com",
-    "img": "",
+    "img": "https://i.postimg.cc/gJLCSqvx/Splide.png",
     "category": "npm",
     "description": "Esta biblioteca página nos proporciona carruseles flexibles y accesibles."
 },
@@ -331,7 +331,7 @@
 {
     "name": "Flowbite",
     "link": "https://flowbite.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/xTpP8DrS/flowbite.png",
     "category": "pagina",
     "description": "Esta página nos proporciona componentes UI basados en Tailwind CSS."
 },
@@ -339,7 +339,7 @@
 {
     "name": "Free for Developers",
     "link": "https://free-for.dev/#/",
-    "img": "",
+    "img": "https://i.postimg.cc/mDZc7kMp/Free-for-devs.png",
     "category": "pagina",
     "description": "Esta página nos brinda una gran lista  de servicios para desarrolladores, como cloud, IA, APIS y más."
 },
@@ -347,7 +347,7 @@
 {
     "name": "transform",
     "link": "https://transform.tools/",
-    "img": "",
+    "img": "https://i.postimg.cc/htqVfSC6/transform.png",
     "category": "pagina",
     "description": "Conversor web multilenguaje para transformar código entre formatos como JSON, HTML, CSS y más."
 },
@@ -355,7 +355,7 @@
 {
     "name": "Responsively",
     "link": "https://responsively.app/",
-    "img": "",
+    "img": "https://i.postimg.cc/wvKy3zQ3/Responsively.png",
     "category": "app",
     "description": "herramienta de código abierto diseñada para facilitar el desarrollo de aplicaciones web responsivas. Permite previsualizar múltiples dispositivos simultáneamente."
 },
@@ -363,7 +363,7 @@
 {
     "name": "Easing Gradients",
     "link": "https://larsenwork.com/easing-gradients/",
-    "img": "",
+    "img": "https://i.postimg.cc/CKGPzPHH/easing-gradients.png",
     "category": "pagina",
     "description": "Esta página te ayuda para que puedas crear tus propios gradientes."
 },
@@ -371,7 +371,7 @@
 {
     "name": "Neumorphism",
     "link": "https://neumorphism.io/",
-    "img": "",
+    "img": "https://i.postimg.cc/sXnkwjHg/neumorphism.png",
     "category": "pagina",
     "description": "Generador de sombras CSS para diseño neumórfico, con vista previa interactiva."
 },
@@ -379,7 +379,7 @@
 {
     "name": "cssbuttons",
     "link": "https://cssbuttons.app/",
-    "img": "",
+    "img": "https://i.postimg.cc/KvVgCt3n/cssbuttons.png",
     "category": "pagina",
     "description": "Colección de más de 60 botones CSS listos para usar, totalmente personalizables."
 },
@@ -387,7 +387,7 @@
 {
     "name": "Swiper",
     "link": "https://swiperjs.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/CxhLP1mj/Swiper.png",
     "category": "npm",
     "description": "Biblioteca para añadir sliders, con transiciones aceleradas por hardware y soporte multiplataforma"
 },
@@ -395,7 +395,7 @@
 {
     "name": "Phedra X",
     "link": "https://chromewebstore.google.com/detail/Phedra%20X:%20Revisualize%20%26%20Edit%20Images%20From%20Web/jckigdhmponckmebbhbfenjmofkklnif",
-    "img": "",
+    "img": "https://i.postimg.cc/4ynHppXW/phedra-x.png",
     "category": "extension",
     "description": "Inteligencia artificial que permite crear imágenes a partir de otras,libre de drechos de autor"
 },
@@ -403,7 +403,7 @@
 {
     "name": "collect UI.",
     "link": "https://collectui.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/PfQg6McR/collect-ui.png",
     "category": "pagina",
     "description": "Plataforma con inspiración visual en diseño de interfaces, basada en retos diarios y UI modernas."
 },
@@ -411,7 +411,7 @@
 {
     "name": "SQLBolt",
     "link": "https://sqlbolt.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/L5533RGR/sqlbolt.png",
     "category": "pagina",
     "description": "Plataforma interactiva para aprender SQL desde el navegador, con lecciones prácticas y ejercicios guiados."
 },
@@ -419,7 +419,7 @@
 {
     "name": "ChartDB",
     "link": "https://chartdb.io/",
-    "img": "",
+    "img": "https://i.postimg.cc/Hn3sd1LJ/chartdb.png",
     "category": "pagina",
     "description": "Editor y visualizador de diagramas de bases de datos, open source y basado en navegador, con importación instantánea y exportación DDL."
 },
@@ -427,7 +427,7 @@
 {
     "name": "tabler icons",
     "link": "https://tabler.io/icons",
-    "img": "",
+    "img": "https://i.postimg.cc/HLCGZPpF/tabler.png",
     "category": "pagina",
     "description": "Colección de más de 5900 íconos SVG gratuitos y personalizables, compatibles con múltiples frameworks."
 },
@@ -435,7 +435,7 @@
 {
     "name": "Radix Icons",
     "link": "https://www.radix-ui.com/icons",
-    "img": "",
+    "img": "https://i.postimg.cc/52bT8QnM/radix-icons.png",
     "category": "npm",
     "description": "Conjunto de íconos SVG de 15×15 px, personalizables y disponibles como componentes React."
 },
@@ -443,7 +443,7 @@
 {
     "name": "Google Fonts Icons",
     "link": "https://fonts.google.com/icons",
-    "img": "",
+    "img": "https://i.postimg.cc/GtPzpq0T/google-fonts-icons.png",
     "category": "pagina",
     "description": "Biblioteca de más de 2500 íconos SVG y de fuente, personalizables con variantes de diseño."
 },
@@ -451,7 +451,7 @@
 {
     "name": "iconoir",
     "link": "https://iconoir.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/cHxLjJxq/iconoir.png",
     "category": "pagina",
     "description": "Biblioteca open source con más de 1600 íconos SVG, disponible para React, Flutter, Figma y más."
 },
@@ -459,7 +459,7 @@
 {
     "name": "Lucide",
     "link": "https://lucide.dev/",
-    "img": "",
+    "img": "https://i.postimg.cc/59vf3vqH/lucide.png",
     "category": "npm",
     "description": "Kit de íconos SVG open source, limpio y consistente, compatible con múltiples frameworks y personalizable, puedes descargar la biblioteca o copiar los íconos directamente desde su página web."
 },
@@ -467,7 +467,7 @@
 {
     "name": "AnimatedIcons",
     "link": "https://animatedicons.co/icons/minimalistic?type=free",
-    "img": "",
+    "img": "https://i.postimg.cc/mDf52ccq/animated-icons.png",
     "category": "pagina",
     "description": "Colección gratuita de íconos animados en Lottie, SVG y PNG, personalizables y optimizados para web y móvil."
 },
@@ -475,7 +475,7 @@
 {
     "name": "CSS GG",
     "link": "https://css.gg/",
-    "img": "",
+    "img": "https://i.postimg.cc/6pTWCPHK/cssgg.png",
     "category": "pagina",
     "description": "Biblioteca de más de 700 íconos en CSS puro y SVG, personalizables."
 },
@@ -483,7 +483,7 @@
 {
     "name": "heroicons",
     "link": "https://heroicons.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/L6gRXPh4/heroicons.png",
     "category": "pagina",
     "description": "Colección de íconos SVG gratuitos y optimizados, para proyectos web y apps."
 },
@@ -491,7 +491,7 @@
 {
     "name": "HTMLRev",
     "link": "https://htmlrev.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/k5LMwy2H/htmlrev.png",
     "category": "pagina",
     "description": "Plataforma con más de 1500 plantillas HTML y frameworks; gratuitas y responsive para diversos tipos de proyectos web."
 },
@@ -499,7 +499,7 @@
 {
     "name": "AnimatiSS",
     "link": "https://xsgames.co/animatiss/",
-    "img": "",
+    "img": "https://i.postimg.cc/BvbC92qs/animatiss.png",
     "category": "pagina",
     "description": "Biblioteca de animaciones CSS y SVG listas para usar, para proyectos web y apps."
 },
@@ -507,7 +507,7 @@
 {
     "name": "imgto.xyz",
     "link": "https://imgto.xyz/",
-    "img": "",
+    "img": "https://i.postimg.cc/prLWqVf0/imgto-xyz.png",
     "category": "pagina",
     "description": "Herramienta web para convertir imágenes a formatos optimizados para la web."
 },
@@ -515,7 +515,7 @@
 {
     "name": "magecdn",
     "link": "https://magecdn.com/tools/svg-loaders",
-    "img": "",
+    "img": "https://i.postimg.cc/RVb71N7D/magecdn.png",
     "category": "pagina",
     "description": "Galería de loaders SVG animados, listos para integrar en proyectos."
 },
@@ -523,7 +523,7 @@
 {
     "name": "Flexbox Labs",
     "link": "https://flexboxlabs.netlify.app/",
-    "img": "",
+    "img": "https://i.postimg.cc/CxTQCPHt/flexbox-labs.png",
     "category": "pagina",
     "description": "Sandbox interactivo para experimentar con CSS Flexbox y entender su comportamiento."
 },
@@ -531,7 +531,7 @@
 {
     "name": "Pragmatic drag and drop",
     "link": "https://www.npmjs.com/package/@atlaskit/pragmatic-drag-and-drop",
-    "img": "",
+    "img": "https://i.postimg.cc/Pr9PSZP0/Pragmatic-drag-and-drop.png",
     "category": "npm",
     "description": "Biblioteca npm para drag and drop accesible y reactiva, ideal para interfaces web."
 },
@@ -539,15 +539,15 @@
 {
     "name": "JSON Crack",
     "link": "https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode",
-    "img": "",
+    "img": "https://i.postimg.cc/6QGSCkFD/json-crack.png",
     "category": "extension",
-    "description": "Herramienta open source que convierte datos JSON, YAML, CSV, XML y TOML en gráficos interactivos; si quieres conocer más sobre esta herramienta puedes visitar su página oficial en https://jsoncrack.com/."
+    "description": "Herramienta open source que convierte datos JSON, YAML, CSV, XML y TOML en gráficos interactivos."
 },
 
 {
     "name": "CSS Peek",
     "link": "https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek",
-    "img": "",
+    "img": "https://i.postimg.cc/RFSHVjy5/css-peek.png",
     "category": "extension",
     "description": "es una extensión gratuita para Visual Studio Code que permite navegar rápidamente entre clases y IDs en archivos HTML, JSX, Vue, Svelte y otros."
 },
@@ -555,7 +555,7 @@
 {
     "name": "JSON Crack",
     "link": "https://jsoncrack.com/converter/json-to-yaml",
-    "img": "",
+    "img": "https://i.postimg.cc/PqRSVSn1/json-crack-converter.png",
     "category": "pagina",
     "description": "Esta herramienta facilita la transformación entre diferentes formatos de datos, como de JSON a CSV, YAML a JSON, XML a JSON, entre otros."
 },
@@ -563,7 +563,7 @@
 {
     "name": "Frontend Practice",
     "link": "https://www.frontendpractice.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/0jRRFk1G/frontend-practice.png",
     "category": "pagina",
     "description": "Plataforma con proyectos reales para practicar desarrollo frontend mediante la recreación de sitios web."
 },
@@ -571,7 +571,7 @@
 {
     "name": "Magic UI",
     "link": "https://magicui.design/",
-    "img": "",
+    "img": "https://i.postimg.cc/JzwDxJFt/magic-ui.png",
     "category": "npm",
     "description": "Biblioteca open source con componentes animados en React, Tailwind CSS y Framer Motion."
 },
@@ -579,7 +579,7 @@
 {
     "name": "CSS Loaders",
     "link": "https://css-loaders.com/classic/",
-    "img": "",
+    "img": "https://i.postimg.cc/x1xd7zxK/css-loaders.png",
     "category": "pagina",
     "description": "Colección de más de 600 animaciones de carga en CSS puro, listas para usar."
 },
@@ -587,7 +587,7 @@
 {
     "name": "Swapy",
     "link": "https://swapy.tahazsh.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/YqvsMTMG/swapy.png",
     "category": "npm",
     "description": "Herramienta JavaScript agnóstica para convertir cualquier layout en uno con funcionalidad drag-to-swap."
 },
@@ -595,7 +595,7 @@
 {
     "name": "drawSQL",
     "link": "https://drawsql.app/",
-    "img": "",
+    "img": "https://i.postimg.cc/YSF47ryn/drawsql.png",
     "category": "pagina",
     "description": "Herramienta colaborativa para diseñar y documentar esquemas de bases de datos con diagramas visuales."
 },
@@ -603,7 +603,7 @@
 {
     "name": "react email",
     "link": "https://www.npmjs.com/package/create-email",
-    "img": "",
+    "img": "https://i.postimg.cc/Wpx1NLgx/react-email.png",
     "category": "npm",
     "description": "Biblioteca para genera correos electrónicos en React, con plantillas listas y estructura optimizada."
 },
@@ -611,7 +611,7 @@
 {
     "name": "React DayPicker",
     "link": "https://www.npmjs.com/package/react-day-picker",
-    "img": "",
+    "img": "https://i.postimg.cc/qq1cKBrc/react-daypicker.png",
     "category": "npm",
     "description": "Componente React para calendarios y selectores de fecha, altamente personalizable y accesible."
 },
