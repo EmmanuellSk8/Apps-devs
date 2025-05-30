@@ -417,6 +417,14 @@
 },
 
 {
+    "name": "ChartDB",
+    "link": "https://chartdb.io/",
+    "img": "",
+    "category": "",
+    "description": "Editor y visualizador de diagramas de bases de datos, open source y basado en navegador, con importación instantánea y exportación DDL."
+},
+
+{
     "name": "tabler icons",
     "link": "https://tabler.io/icons",
     "img": "",
@@ -470,13 +478,6 @@
     "img": "",
     "category": "",
     "description": "Biblioteca de más de 700 íconos en CSS puro y SVG, personalizables."
-},
-{
-    "name": "React Icons",
-    "link": "https://react-icons.github.io/react-icons/",
-    "img": "",
-    "category": "",
-    "description": "Conjunto de íconos SVG para proyectos de React."
 },
 
 {
