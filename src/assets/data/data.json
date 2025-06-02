@@ -322,7 +322,7 @@
 
 {
     "name": "Splide",
-    "link": "splidejs.com",
+    "link": "https://splidejs.com/",
     "img": "https://i.postimg.cc/gJLCSqvx/Splide.png",
     "category": "npm",
     "description": "Esta biblioteca página nos proporciona carruseles flexibles y accesibles."
@@ -614,12 +614,12 @@
     "img": "https://i.postimg.cc/qq1cKBrc/react-daypicker.png",
     "category": "npm",
     "description": "Componente React para calendarios y selectores de fecha, altamente personalizable y accesible."
-},
+ },
 
 {
     "name": "LaLoka Layouts",
     "link": "https://layoutsfortailwind.lalokalabs.dev/",
-    "img": "",
+    "img": "https://i.postimg.cc/N0DTQr12/laloka-layouts.png",
     "category": "pagina",
     "description": "Colección de patrones y layouts responsive listos para usar con Tailwind CSS."
 },
@@ -627,7 +627,7 @@
 {
     "name": "Squish",
     "link": "https://squish.addy.ie/",
-    "img": "",
+    "img": "https://i.postimg.cc/WpFSTT4p/squish.png",
     "category": "pagina",
     "description": "Herramienta web para compresión y optimización de imágenes por lotes, compatible con AVIF, JPEG, PNG y más."
 },
@@ -635,7 +635,7 @@
 {
     "name": "animeJS",
     "link": "https://animejs.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/WzvdBG3k/animejs.png",
     "category": "npm",
     "description": "Biblioteca JavaScript ligera para animaciones avanzadas en CSS, SVG y DOM, con API intuitiva."
 },
@@ -643,7 +643,7 @@
 {
     "name": "CodeSnap",
     "link": "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap",
-    "img": "",
+    "img": "https://i.postimg.cc/qMYTgksm/codesnap.png",
     "category": "extension",
     "description": "es una extensión para Visual Studio Code que permite capturar fragmentos de código, también es altamente personalizable."
 },
@@ -651,7 +651,7 @@
 {
     "name": "Formity",
     "link": "https://www.formity.app/",
-    "img": "",
+    "img": "https://i.postimg.cc/HLPY0QXg/formity.png",
     "category": "extension",
     "description": "biblioteca de React para crear formularios multi-paso dinámicos, con lógica condicional avanzada y soporte para bibliotecas como React Hook Form y Formik."
 },
@@ -659,7 +659,7 @@
 {
     "name": "pqoqubbw/icons",
     "link": "https://icons.pqoqubbw.dev/",
-    "img": "",
+    "img": "https://i.postimg.cc/0jsL7QWv/pqoqubbw-icons.png",
     "category": "pagina",
     "description": "Colección open source de íconos animados SVG, suaves y personalizables, compatibles con Lucide y Motion."
 },
@@ -667,7 +667,7 @@
 {
     "name": "GitLens",
     "link": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
-    "img": "",
+    "img": "https://i.postimg.cc/9MVpp7hL/gitlens.png",
     "category": "extension",
     "description": "Extensión avanzada para Git que proporciona anotaciones, historial y visualizaciones interactivas directamente en el editor."
 },
@@ -675,7 +675,7 @@
 {
     "name": "Path Intellisense",
     "link": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense",
-    "img": "",
+    "img": "https://i.postimg.cc/90BF7sBx/path-intellisense.png",
     "category": "extension",
     "description": "Extensión que autocompleta rutas de archivos en tiempo real, facilitando la importación y navegación en proyectos."
 },
@@ -683,7 +683,7 @@
 {
     "name": "Material Icon Theme",
     "link": "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
-    "img": "",
+    "img": "https://i.postimg.cc/yNq47vmW/material-icon-theme.png",
     "category": "extension",
     "description": "Tema de íconos basado en Material Design que mejora la visualización de archivos y carpetas en el explorador de visual studio Code."
 },
@@ -691,7 +691,7 @@
 {
     "name": "ihancer",
     "link": "https://ihancer.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/BbF77Gzg/ihancer.png",
     "category": "pagina",
     "description": "Aplicación web y móvil que mejora automáticamente la calidad de imágenes usando inteligencia artificial."
 },
@@ -699,7 +699,7 @@
 {
     "name": "rosen/charts",
     "link": "https://rosencharts.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/RVzgCy8k/rosen-charts.png",
     "category": "npm",
     "description": "Biblioteca de gráficos para React, compatible con RSC(React Server Components)."
 },
@@ -707,7 +707,7 @@
 {
     "name": "Gridstack.js",
     "link": "https://gridstackjs.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/ZRdL4xLY/gridstack.png",
     "category": "npm",
     "description": "Biblioteca TypeScript para crear dashboards drag-and-drop, responsivos y con soporte para múltiples frameworks."
 },
@@ -715,7 +715,7 @@
 {
     "name": "transition.css",
     "link": "https://www.transition.style/",
-    "img": "",
+    "img": "https://i.postimg.cc/hjL72yrm/transition-css.png",
     "category": "pagina",
     "description": "Colección de transiciones CSS con clip-path, listas para usar y personalizables."
 },
@@ -723,7 +723,7 @@
 {
     "name": "GSAP",
     "link": "https://gsap.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/brKcdT76/gsap.png",
     "category": "npm",
     "description": "Biblioteca JavaScript para animaciones de alto rendimiento en web, compatible con CSS, SVG y más."
 },
@@ -731,7 +731,7 @@
 {
     "name": "Color Palettes",
     "link": "https://colorpalettes.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/rpdHRW93/color-palettes.png",
     "category": "pagina",
     "description": "Colección de paletas de colores para diseñadores y desarrolladores, con herramientas para crear y guardar combinaciones."
 },
@@ -739,7 +739,7 @@
 {
     "name": "HTML Colors",
     "link": "https://htmlcolors.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/2SNyKF1F/html-colors.png",
     "category": "pagina",
     "description": "Herramienta web para explorar y generar códigos de color en formatos HEX, RGB, HSL y más."
 },
@@ -747,7 +747,7 @@
 {
     "name": "NumberFlow",
     "link": "https://number-flow.barvian.me/",
-    "img": "",
+    "img": "https://i.postimg.cc/XvGVNrB7/numberflow.png",
     "category": "npm",
     "description": "biblioteca para animar transiciones numéricas en aplicaciones web, compatible con React, Vue, Svelte y JavaScript puro."
 },
@@ -755,7 +755,7 @@
 {
     "name": "driver.js",
     "link": "https://driverjs.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/mZMyzVW7/driverjs.png",
     "category": "npm",
     "description": "Biblioteca JavaScript ligera para crear recorridos interactivos y resaltar elementos en aplicaciones web."
 },
@@ -763,7 +763,7 @@
 {
     "name": "useHooks",
     "link": "https://usehooks.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/z3ZdhP0c/usehooks.png",
     "category": "npm",
     "description": "Colección de hooks de React modernos y seguros para el servidor."
 },
@@ -771,7 +771,7 @@
 {
     "name": "Tailwind Play",
     "link": "https://play.tailwindcss.com/",
-    "img": "",
+    "img": "https://i.postimg.cc/76SXkNx1/tailwind-play.png",
     "category": "pagina",
     "description": "Es un editor en línea oficial de Tailwind CSS que permite escribir, previsualizar y compartir código en tiempo real, sin necesidad de configuración local."
 }
