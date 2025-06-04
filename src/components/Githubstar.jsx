@@ -3,12 +3,13 @@ import NumberFlow, { continuous } from '@number-flow/react';
 
 export default function GithubStar() {
   const [value, setValue] = useState(0);
+  
   useEffect(() => {
-    fetch('https://api.github.com/repos/EmmanuellSk8/Apps-devs')
+    fetch('/api/github-stars')
       .then(res => res.json())
       .then(data => {
-        if (data.stargazers_count !== undefined) {
-          setValue(data.stargazers_count);
+        if (data.stars !== undefined) {
+          setValue(data.stars);
         } else {
           console.error("No se pudo obtener la cuenta de estrellas");
         }
@@ -18,12 +19,10 @@ export default function GithubStar() {
       });
   }, []);
 
-
-
-    return (
-        <NumberFlow
-            plugins={[continuous]}
-            value={value}
-        />
-    );
+  return (
+    <NumberFlow
+      plugins={[continuous]}
+      value={value}
+    />
+  );
 }
