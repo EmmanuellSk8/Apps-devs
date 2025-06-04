@@ -1,0 +1,109 @@
+---
+import SendIcon from "./icons/SendIcon.astro";
+---
+
+<button
+    id="btn-modal"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-x-2"
+    >Envíanos tu recurso
+
+    <SendIcon class="icon size-5 duration-200 ease-in-out" />
+</button>
+
+<dialog
+    closedby="any"
+    id="modal"
+    class="rounded-lg shadow-lg p-60 z-20 bg-slate-300 flex-wrap"
+>
+    <form method="dialog" class="flex flex-col gap-y-4 w-[300px]">
+        <h2 class="text-2xl font-semibold text-center mb-4">Enviar recurso</h2>
+        <input
+            type="text"
+            placeholder="Nombre del recurso"
+            class="border border-gray-300 rounded p-2"
+            required
+        />
+        <input
+            type="url"
+            placeholder="URL del recurso"
+            class="border border-gray-300 rounded p-2"
+            required
+        />
+        <textarea
+            placeholder="Descripción del recurso"
+            class="border border-gray-300 rounded p-2"
+            required></textarea>
+        <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >Enviar</button
+        >
+    </form>
+
+    <form method="dialog">
+        <button
+            class="bg-slate-500 hover:bg-red-600/80 duration-300 mt-4 text-white font-bold py-2 px-4 rounded w-full"
+            >cerrar</button
+        >
+    </form>
+</dialog>
+
+<div id="overlay"></div>
+
+<script>
+    const modal = document.getElementById("modal") as HTMLDialogElement;
+    const button = document.getElementById("btn-modal");
+    const overlay = document.getElementById("overlay");
+
+    button.addEventListener("click", () => {
+        modal.showModal();
+        overlay.classList.add("active");
+    });
+
+    modal.addEventListener("close", () => {
+        modal.close();
+        overlay.classList.remove("active");
+    });
+</script>
+
+<style>
+
+    dialog[open] {
+        scale: 1;
+        transition: scale 0.4s ease-in-out;
+
+        @starting-style {
+            scale: 0;
+        }
+    }
+
+    dialog {
+        font-family: "Onest Variable", sans-serif;
+        transition:
+            scale 0.4s ease,
+            display 0.4s ease allow-discrete;
+        scale: 0;
+    }
+
+    #overlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        z-index: 998;
+    }
+
+    #overlay.active {
+        display: block;
+    }
+
+    button:hover .icon {
+        transform: rotate(45deg);
+    }
+
+    #btn-modal {
+        background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+    }
+
+</style>
