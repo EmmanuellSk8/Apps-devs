@@ -1,0 +1,184 @@
+---
+import EraseSearch from "./icons/EraseSearch.astro";
+---
+
+<div
+    class="container-search justify-center items-center ml-3 mt-24 flex gap-x-1"
+>
+    <select
+        id="categorySelect"
+        class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black"
+    >
+        <option value="" hidden>Todas las categorías</option>
+        <option value="Extensiones">Extensiones</option>
+        <option value="Paginas">Páginas</option>
+        <option value="NPM">NPM</option>
+        <option value="APIS">APIS</option>
+        <option value="APPS">APPS</option>
+    </select>
+
+    <input
+        type="search"
+        placeholder="Buscar..."
+        class="text-black bg-white pl-2 rounded-sm w-2/4 py-2 px-2 border-2 border-black"
+        id="search-input"
+    />
+    <EraseSearch
+        id="EraseSearch"
+        class="hover:scale-125 hover:rotate-90 duration-300 size-8"
+    />
+</div>
+
+<div class="input-mobile hidden items-center">
+    <input
+        type="search"
+        placeholder="Buscar..."
+        class="text-black bg-white pl-2 rounded-sm w-2/4 py-2 px-2 border-2 border-black"
+        id="search-input-mobile"
+    />
+    <EraseSearch
+        id="EraseSearchMobile"
+        class="hover:scale-125 hover:rotate-90 duration-300 size-8"
+    />
+</div>
+
+<style>
+    @media screen and (max-width: 570px) {
+        .container-search {
+            flex-direction: column;
+            align-items: center;
+            color: blueviolet;
+        }
+
+        #categorySelect {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #search-input {
+            display: none;
+        }
+
+        #EraseSearch {
+            display: none;
+        }
+
+        #search-input-mobile {
+            width: 100%;
+            margin-left: 10px;
+        }
+
+        .input-mobile {
+            display: flex;
+        }
+    }
+</style>
+
+<script type="module">
+    function normalizeText(text) {
+        return text
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+    }
+
+    document.addEventListener("keyup", (e) => {
+        const searchInput = document.getElementById("search-input");
+        if (e.target === searchInput) {
+            const searchTerm = normalizeText(e.target.value);
+
+            document.querySelectorAll(".card").forEach((card) => {
+                const title =
+                    card.querySelector(".card-title")?.textContent || "";
+                const text =
+                    card.querySelector(".card-text")?.textContent || "";
+
+                const normalizedTitle = normalizeText(title);
+                const normalizedText = normalizeText(text);
+
+                if (
+                    normalizedTitle.toLowerCase().includes(searchTerm) ||
+                    normalizedText.toLowerCase().includes(searchTerm)
+                ) {
+                    card.classList.remove("filter");
+                } else {
+                    card.classList.add("filter");
+                }
+            });
+        }
+    });
+    const eraseSearch = document.getElementById("EraseSearch");
+
+    eraseSearch?.addEventListener("click", () => {
+        const searchInput = document.getElementById("search-input");
+        searchInput.value = "";
+        document.querySelectorAll(".card").forEach((card) => {
+            card.classList.remove("filter");
+        });
+    });
+</script>
+
+<!-- for input mobile -->
+<script type="module">
+    function normalizeText(text) {
+        return text
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+    }
+
+    document.addEventListener("keyup", (e) => {
+        const searchInput = document.getElementById("search-input-mobile");
+        if (e.target === searchInput) {
+            const searchTerm = normalizeText(e.target.value);
+
+            document.querySelectorAll(".card").forEach((card) => {
+                const title =
+                    card.querySelector(".card-title")?.textContent || "";
+                const text =
+                    card.querySelector(".card-text")?.textContent || "";
+
+                const normalizedTitle = normalizeText(title);
+                const normalizedText = normalizeText(text);
+
+                if (
+                    normalizedTitle.toLowerCase().includes(searchTerm) ||
+                    normalizedText.toLowerCase().includes(searchTerm)
+                ) {
+                    card.classList.remove("filter");
+                } else {
+                    card.classList.add("filter");
+                }
+            });
+        }
+    });
+    const eraseSearchMobile = document.getElementById("EraseSearchMobile");
+
+    eraseSearchMobile?.addEventListener("click", () => {
+        const searchInput = document.getElementById("search-input-mobile");
+        searchInput.value = "";
+        document.querySelectorAll(".card").forEach((card) => {
+            card.classList.remove("filter");
+        });
+    });
+</script>
+
+<script>
+    const categorySelect = document.getElementById(
+        "categorySelect",
+    ) as HTMLSelectElement;
+
+    if (categorySelect) {
+        categorySelect.addEventListener("change", () => {
+            const selectedCategory = categorySelect.value;
+            const categoryElement = document.getElementById("category");
+
+            if (categoryElement) {
+                categoryElement.textContent =
+                    selectedCategory || "Todas las categorías";
+            }
+        });
+    } else {
+        console.error("El elemento no se encontró");
+    }
+</script>

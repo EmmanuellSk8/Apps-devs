@@ -1,36 +1,11 @@
 ---
-import SearchIcon from "./icons/SearchIcon.astro";
 import PostSearch from "./PostSearch.astro";
 import ButtonSendResource from "./ButtonSendResource.astro";
 import Json from "./Json.astro";
+import Search from "./Search.astro";
 ---
 
-<div class="justify-center items-center ml-3 mt-24 flex gap-x-1">
-    <select id="categorySelect"
-     class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black">
-        <option value="" hidden>Todas las categorías</option>
-        <option value="Extensiones">Extensiones</option>
-        <option value="Paginas">Páginas</option>
-        <option value="NPM">NPM</option>
-        <option value="APIS">APIS</option>
-        <option value="APPS">APPS</option>
-    </select>
-
-    <input
-        type="search"
-        placeholder="Buscar..."
-        class="text-black bg-white pl-2 rounded-sm w-2/4  py-2 px-2 border-2 border-black"
-         id="search-input"
-    />
-    <button class=""><SearchIcon/ class="hover:scale-125 duration-300 size-8"></button>
-
-</div>
-
-<!--
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AÑADIR REPO DE GITHUB Y CONTEO DE STARS EN EL HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CAMBIAR LUPA DE BUSCAR POR "X" DE LIMPIAR BUSCADOR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
--->
+<Search/>
 <PostSearch/>
 
 <div class="w-full flex justify-center mt-14 mb-16">    
@@ -39,58 +14,4 @@ import Json from "./Json.astro";
 
 <div id="category" class="text-4xl mt-10 ml-20 font-medium">Todas las categorías</div>
 
-<style>
-
-    @media screen and (max-width: 410px) {
-       
-        #categorySelect{
-            width: 180px;
-        }
-
-    }
-
-</style>
 <Json/> 
-
-<script type="module">
-    document.addEventListener("keyup", (e) => {
-        const searchInput = document.getElementById("search-input");
-        if (e.target === searchInput) {
-            const searchTerm = e.target.value.toLowerCase();
-            
-            document.querySelectorAll(".card").forEach((card) => {
-                const title = card.querySelector(".card-title")?.textContent || "";
-                const text = card.querySelector(".card-text")?.textContent || "";
-                
-                if (title.toLowerCase().includes(searchTerm) || text.toLowerCase().includes(searchTerm)) {
-                    card.classList.remove("filter");
-                } else {
-                card.classList.add("filter");
-            }
-        });
-    }
-});
-
-</script>
-
-<script>
-
-const categorySelect = document.getElementById("categorySelect") as HTMLSelectElement;
-
-
-if (categorySelect) {
-    categorySelect.addEventListener("change", () => {
-        const selectedCategory = categorySelect.value;  
-        const categoryElement = document.getElementById("category");
-
-        if (categoryElement) {
-            categoryElement.textContent = selectedCategory || "Todas las categorías";
-        }
-    });
-    
-} else {
-    console.error("El elemento no se encontró");
-}
-
-</script>
-
