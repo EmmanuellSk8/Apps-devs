@@ -1,18 +1,12 @@
 ---
 import DarkModeIcon from "./icons/DarkModeIcon.astro";
+import GithubIcon from "./icons/GithubIcon.astro";
 import LightModeIcon from "./icons/LightModeIcon.astro";
-import MenuIcon from "./icons/MenuIcon.astro";
+import StarIcon from "./icons/StarIcon.astro";
+import GitHubStar from "../components/Githubstar.jsx";
 ---
 
 <script>
-    const boton = document.querySelector("#boton-menu-mobile");
-    const menu = document.querySelector("#menu-mobile");
-
-    boton.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-        menu.classList.toggle("show");
-    });
-
     const DarkModeIcon = document.getElementById("DarkModeIcon");
     const LightModeIcon = document.getElementById("LightModeIcon");
     const body = document.body;
@@ -27,7 +21,6 @@ import MenuIcon from "./icons/MenuIcon.astro";
         LightModeIcon.classList.remove("hidden");
     });
 
-    
     if (
         window.matchMedia &&
         window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -64,7 +57,6 @@ import MenuIcon from "./icons/MenuIcon.astro";
         LightModeIconn.classList.remove("hidden");
     });
 
-
     if (
         window.matchMedia &&
         window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -89,23 +81,34 @@ import MenuIcon from "./icons/MenuIcon.astro";
 </script>
 
 <style>
-    @media screen and (max-width: 700px) {
-        Header {
+    @media screen and (max-width: 1300px) {
+        #list-categories {
+            display: none;
+        }
+
+        #header {
             justify-content: space-between;
         }
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 570px) {
         #mobile {
             display: block;
             margin: 6px;
         }
-
-        #header{
+        #header {
             display: none;
         }
     }
+    @media screen and (max-width: 400px) {
+        #github-star-mobile {
+            display: flex;
+        }
 
+        #small-github-star-mobile {
+            display: none;
+        }
+    }
 
     .hidden {
         display: none;
@@ -148,60 +151,82 @@ import MenuIcon from "./icons/MenuIcon.astro";
         color: white;
         height: 100%;
     }
+
+    @keyframes star {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.3);
+        }
+        50% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(1.3);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .star:hover {
+        animation: star 1s;
+    }
 </style>
 
 <header id="mobile" class="hidden">
-    <MenuIcon
-        id="boton-menu-mobile"
-        class="hover:scale-125 cursor-pointer duration-200 ease-in-out mt-4"
-    />
+    <div class="flex flex-col right-2 mt-4 gap-x-2 items-center top-0">
+        <div class="flex items-center justify-between w-full mb-4">
 
-    <ul class="gap-y-4 mt-4 flex-col" id="menu-mobile">
-        <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
-        >
-            Extensiones
-        </li>
-        <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
-        >
-            Páginas
-        </li>
-        <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
-        >
-            NPM
-        </li>
-        <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
-        >
-            APIS
-        </li>
-        <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
-        >
-            APPS
-        </li>
-    </ul>
+            <span class="text-3xl font-semibold cursor-pointer">AppsDevs</span>
 
-    <div class="flex right-2 mt-4 absolute gap-x-2 items-center top-0">
-        <div>
-            <LightModeIcon
-                id="DarkModeIcon"
-                class="hover:cursor-pointer size-7 hover:scale-125 duration-300"
-            />
-            <DarkModeIcon
-                id="LightModeIcon"
-                class="hover:cursor-pointer size-7 hidden hover:scale-125 duration-300"
-            />
+            <div class="flex items-center gap-x-2">
+                <a
+                    target="_blank"
+                    id="small-github-star-mobile"
+                    href="https://github.com/EmmanuellSk8/Apps-devs"
+                    class="bg-black text-white gap-2 items-center text-xl border-2 px-6 py-1 flex rounded-md"
+                >
+                    <GithubIcon class="size-6" />
+                    <StarIcon
+                        class="star ml-1 text-gray-500 size-6 hover:text-yellow-400 duration-200 ease-in-out"
+                    />
+                    <span></span><GitHubStar client:load /></a>
+
+                <LightModeIcon
+                    id="DarkModeIcon"
+                    class="hover:cursor-pointer size-7 hover:scale-125 duration-300"
+                />
+                <DarkModeIcon
+                    id="LightModeIcon"
+                    class="hover:cursor-pointer size-7 hidden hover:scale-125 duration-300"
+                />
+            </div>
         </div>
 
-        <span class="text-xl font-semibold cursor-pointer">AppsDevs</span>
+        <div class="flex items-center">
+            <a
+                id="github-star-mobile"
+                href="https://github.com/EmmanuellSk8/Apps-devs"
+                target="_blank"
+                class="bg-black w-[300px] text-white gap-2 items-center text-xl border-2 px-6 py-1 rounded-md hidden"
+            >
+                <GithubIcon class="size-6" /> Star on Github <StarIcon
+                    class="star ml-1 text-gray-500 size-6 hover:text-yellow-400 duration-200 ease-in-out"
+                />
+                <span></span><GitHubStar client:load />
+            </a>
+        </div>
     </div>
 </header>
 
-<header class="flex gap-x-36 justify-around" id="header">
-    <ul class="flex gap-x-10 mt-4">
+<header class="flex justify-around items-center mt-6" id="header">
+    <span class="text-3xl font-semibold cursor-pointer">AppsDevs</span>
+
+    <ul
+        id="list-categories"
+        class="flex gap-x-10 w-full justify-center items-center"
+    >
         <li
             class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
@@ -212,7 +237,7 @@ import MenuIcon from "./icons/MenuIcon.astro";
         >
             Páginas
         </li>
-                <li
+        <li
             class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             NPM
@@ -229,7 +254,20 @@ import MenuIcon from "./icons/MenuIcon.astro";
         </li>
     </ul>
 
-    <div class="flex right-2 mt-4 absolute gap-x-2 items-center">
+    <div class="flex right-2 gap-x-2 items-center">
+        <div class="flex items-center mr-4">
+            <a
+                href="https://github.com/EmmanuellSk8/Apps-devs"
+                target="_blank"
+                class="bg-black w-[300px] text-white flex gap-2 items-center text-xl border-2 px-6 py-1 rounded-md"
+            >
+                <GithubIcon class="size-6" /> Star on Github <StarIcon
+                    class="star ml-1 text-gray-500 size-6 hover:text-yellow-400 duration-200 ease-in-out"
+                />
+                <span></span><GitHubStar client:load />
+            </a>
+        </div>
+
         <div>
             <LightModeIcon
                 id="DarkModeIconn"
@@ -240,7 +278,5 @@ import MenuIcon from "./icons/MenuIcon.astro";
                 class="hover:cursor-pointer size-7 hidden hover:scale-125 duration-300"
             />
         </div>
-
-        <span class="text-xl font-semibold cursor-pointer">AppsDevs</span>
     </div>
 </header>
