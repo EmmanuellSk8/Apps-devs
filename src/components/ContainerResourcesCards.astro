@@ -1,0 +1,103 @@
+---
+import RedirectLinkIcon from "../components/icons/RedirectLinkIcon.astro";
+import dataTest from "../assets/data/data.json";
+---
+
+<script>
+    const data = "../src/assets/data/data.json";
+    const response = await fetch(data)
+        .then((res) => res.json())
+        .catch((err) => console.error("Error fetching JSON:", err));
+</script>
+
+<style>
+    @media screen and (max-width: 410px) {
+        #categorySelect {
+            width: 180px;
+        }
+    }
+
+    @media screen and (max-width: 836px) {
+        section {
+            margin-inline: 0;
+            margin-right: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        section {
+            display: flex;
+            flex-direction: column;
+            margin-left: -2rem;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        section {
+            margin-left: -3rem;
+        }
+
+        .card {
+            width: 300px;
+        }
+    }
+
+    .card {
+        border-radius: 8px;
+        background-image: url("../assets/img/fondo-cards-white.png");
+        color: black;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        margin-inline: 64px;
+    }
+
+    img {
+        aspect-ratio: 2/1;
+    }
+
+    .card-text {
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+</style>
+
+<section>
+    {
+        dataTest.map((item) => (
+            <article class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md">
+                <div class="flex justify-between mb-4">
+                    <span class="card-title font-semibold cursor-pointer">
+                        {item.name}
+                    </span>
+                    <a href={item.link} target="_blank">
+                        <RedirectLinkIcon
+                            slot="slot-link"
+                            class="hover:scale-125 duration-300"
+                        />
+                    </a>
+                </div>
+
+                <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                    <img
+                        src={item.img}
+                        alt="Verifique su conexión a internet"
+                        slot="slot-img"
+                        class="rounded-md"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="w-full">
+                    <p class="card-text">{item.description}</p>
+                </div>
+            </article>
+        ))
+    }
+</section>
