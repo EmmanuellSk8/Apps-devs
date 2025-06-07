@@ -2,14 +2,12 @@
 import EraseSearch from "./icons/EraseSearch.astro";
 ---
 
-<div
-    class="container-search justify-center items-center ml-3 mt-24 flex gap-x-1"
->
+<div class="container-search justify-center items-center ml-3 mt-24 flex gap-x-1">
     <select
         id="categorySelect"
         class="bg-white text-black rounded-sm cursor-pointer py-2 px-2 border-2 border-black"
     >
-        <option value="" hidden>Todas las categorías</option>
+        <option value="">Todas las categorías</option>
         <option value="Extensiones">Extensiones</option>
         <option value="Paginas">Páginas</option>
         <option value="NPM">NPM</option>
@@ -74,6 +72,7 @@ import EraseSearch from "./icons/EraseSearch.astro";
     }
 </style>
 
+<!-- for desktop -->
 <script type="module">
     function normalizeText(text) {
         return text
@@ -114,6 +113,43 @@ import EraseSearch from "./icons/EraseSearch.astro";
         searchInput.value = "";
         document.querySelectorAll(".card").forEach((card) => {
             card.classList.remove("filter");
+        });
+    });
+
+    const categorySelect = document.getElementById("categorySelect");
+
+    if (categorySelect) {
+        categorySelect.addEventListener("change", () => {
+            const selectedCategory = categorySelect.value.toLowerCase();
+
+            document.querySelectorAll(".card").forEach((card) => {
+                const cardCategory = card.dataset.category;
+
+                if (!selectedCategory || cardCategory === selectedCategory) {
+                    card.classList.remove("filter");
+                } else {
+                    card.classList.add("filter");
+                }
+            });
+        });
+    }
+
+    window.addEventListener("select-category", (e) => {
+        const selectedCategory = e.detail.toLowerCase();
+        const updateSelect = e.detail;
+        const select = document.getElementById("categorySelect");
+
+        if (select) {
+            select.value = updateSelect;
+        }
+
+        document.querySelectorAll(".card").forEach((card) => {
+            const cardCategory = card.dataset.category;
+            if (!selectedCategory || cardCategory === selectedCategory) {
+                card.classList.remove("filter");
+            } else {
+                card.classList.add("filter");
+            }
         });
     });
 </script>
@@ -161,12 +197,29 @@ import EraseSearch from "./icons/EraseSearch.astro";
             card.classList.remove("filter");
         });
     });
+
+    const categorySelect = document.getElementById("categorySelect");
+
+    if (categorySelect) {
+        categorySelect.addEventListener("change", () => {
+            const selectedCategory = categorySelect.value.toLowerCase();
+
+            document.querySelectorAll(".card").forEach((card) => {
+                const cardCategory = card.dataset.category;
+
+                if (!selectedCategory || cardCategory === selectedCategory) {
+                    card.classList.remove("filter");
+                } else {
+                    card.classList.add("filter");
+                }
+            });
+        });
+    }
 </script>
 
-<script>
-    const categorySelect = document.getElementById(
-        "categorySelect",
-    ) as HTMLSelectElement;
+<!-- This script updates the status of the text "all categories" -->
+<script type="module">
+    const categorySelect = document.getElementById("categorySelect");
 
     if (categorySelect) {
         categorySelect.addEventListener("change", () => {
@@ -181,4 +234,14 @@ import EraseSearch from "./icons/EraseSearch.astro";
     } else {
         console.error("El elemento no se encontró");
     }
+
+    window.addEventListener("select-category", (e) => {
+        const selectedCategory = e.detail;
+        const categoryElement = document.getElementById("category");
+
+        if (categoryElement) {
+            categoryElement.textContent =
+                selectedCategory || "Todas las categorías";
+        }
+    });
 </script>

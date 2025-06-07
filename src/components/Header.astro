@@ -80,6 +80,19 @@ import GitHubStar from "../components/Githubstar.jsx";
     LightModeIconn.addEventListener("click", toggleModee);
 </script>
 
+<script type="module">
+  document.querySelectorAll(".category-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const category = link.dataset.category;
+      const event = new CustomEvent("select-category", {
+        detail: category,
+      });
+      window.dispatchEvent(event);
+    });
+  });
+</script>
+
 <style>
     @media screen and (max-width: 1300px) {
         #list-categories {
@@ -228,27 +241,32 @@ import GitHubStar from "../components/Githubstar.jsx";
         class="flex gap-x-10 w-full justify-center items-center"
     >
         <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
+            data-category="Extensiones"
+            class="category-link hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             Extensiones
         </li>
         <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
+            data-category="Paginas"
+            class="category-link hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             Páginas
         </li>
         <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
+            data-category="NPM"
+            class="category-link hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             NPM
         </li>
         <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
+            data-category="APIS"
+            class="category-link hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             APIS
         </li>
         <li
-            class="hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
+            data-category="APPS"
+            class="category-link hover:cursor-pointer font-semibold hover:scale-125 duration-300 text-2xl"
         >
             APPS
         </li>
