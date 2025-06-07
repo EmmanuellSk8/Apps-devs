@@ -12,7 +12,7 @@ import SendIcon from "./icons/SendIcon.astro";
 <dialog
     closedby="any"
     id="modal"
-    class="rounded-lg shadow-lg p-52 w-fit 40 z-20 bg-slate-300"
+    class="overflow-hidden rounded-lg shadow-lg p-52 w-fit 40 z-20 bg-slate-300"
 >
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div>
 
@@ -42,13 +42,13 @@ import SendIcon from "./icons/SendIcon.astro";
             >Enviar</button
         >
     </form>
-
     <form method="dialog">
         <button
-            class="bg-slate-500 hover:bg-red-600/80 duration-300 mt-4 text-white font-bold py-2 px-4 rounded w-full"
+            class="bg-slate-500 mt-4 hover:bg-red-600/80 duration-300 text-white font-bold py-2 px-4 rounded w-full"
             >cerrar</button
         >
     </form>
+
 </dialog>
 
 <div id="overlay"></div>
@@ -84,6 +84,7 @@ import SendIcon from "./icons/SendIcon.astro";
             scale 0.4s ease,
             display 0.4s ease allow-discrete;
         scale: 0;
+        overflow-y: hidden;
     }
     #overlay {
         position: fixed;
@@ -118,5 +119,13 @@ import SendIcon from "./icons/SendIcon.astro";
         #modal {
             padding: 30px;
         }
+    }
+    
+    @media screen and (max-width:400px) {
+        form{
+            width: 100%;
+        }
+
+
     }
 </style>

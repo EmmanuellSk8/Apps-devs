@@ -20,7 +20,7 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
     }
     @media screen and (max-width: 700px) {
         .open-modal {
-           display: none;
+            display: none;
         }
     }
     @media screen and (max-width: 420px) {
@@ -42,24 +42,16 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
 
     .card {
         border-radius: 8px;
+        background: #8e9eab;
+        background: -webkit-linear-gradient(
+            to right,
+            #eef2f3,
+            #8e9eab
+        );
         background: linear-gradient(
-            to bottom,
-            hsl(330, 6.25%, 74.9%) 0%,
-            hsl(330.01, 6.21%, 75.16%) 8.1%,
-            hsl(330.02, 6.11%, 75.88%) 15.5%,
-            hsl(330.05, 5.94%, 76.98%) 22.5%,
-            hsl(330.08, 5.72%, 78.38%) 29%,
-            hsl(330.11, 5.44%, 79.99%) 35.3%,
-            hsl(330.14, 5.1%, 81.74%) 41.2%,
-            hsl(330.18, 4.7%, 83.54%) 47.1%,
-            hsl(330.21, 4.23%, 85.34%) 52.9%,
-            hsl(330.23, 3.67%, 87.06%) 58.8%,
-            hsl(330.26, 3.03%, 88.67%) 64.7%,
-            hsl(330.28, 2.31%, 90.09%) 71%,
-            hsl(330.29, 1.54%, 91.29%) 77.5%,
-            hsl(330.3, 0.79%, 92.2%) 84.5%,
-            hsl(330.31, 0.22%, 92.79%) 91.9%,
-            hsl(0, 0%, 93%) 100%
+            to right,
+            #eef2f3,
+            #8e9eab
         );
         color: black;
         height: fit-content;
@@ -85,7 +77,7 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
         overflow-wrap: break-word;
     }
 
-        dialog[open] {
+    dialog[open] {
         scale: 1;
         transition: scale 0.4s ease-in-out;
 
@@ -109,7 +101,6 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
                 class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md"
                 data-category={item.category.toLowerCase()}
             >
-
                 <div class="flex justify-between mb-4">
                     <span class="card-title font-semibold cursor-pointer">
                         {item.name}
