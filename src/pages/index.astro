@@ -4,12 +4,11 @@ import Header from "../components/Header.astro";
 import "@fontsource/poppins";
 import Container from "../components/Container.astro";
 import Footer from "../components/Footer.astro";
-import Json from "../components/Json.astro";
 ---
 
 <Layout title="AppsDevs">
   <main>
-    <section class="max-w-[1900px] flex flex-col justify-center mx-auto px-4">
+    <section class="max-w-[1900px] flex flex-col justify-beetwen mx-auto px-4">
       <Header />
       <Container />
       <Footer/>
@@ -21,11 +20,9 @@ import Json from "../components/Json.astro";
   main {
     font-family: "poppins", sans-serif;
   }
-  
   :root {
     color-scheme: light dark;
   }
-  
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,13 +30,12 @@ import Json from "../components/Json.astro";
     background-color: var(--background-color);
     background-image: var(--background-gradient);
     color: var(--text-color);
-  }
-  
+		background-repeat: no-repeat;
+    }
   :root {
     --background-color: white;
     --text-color: black;
   }
-  
   @media (prefers-color-scheme: dark) {
     :root {
       --background-color: #161616;
@@ -51,7 +47,6 @@ import Json from "../components/Json.astro";
         --text-color: white;
       }
     }
-
   @media (prefers-color-scheme: light) {
     :root {
       --background-color: white;
@@ -63,7 +58,6 @@ import Json from "../components/Json.astro";
       );
       --text-color: rgb(0, 0, 0);
     }
-    
     html {
       background-color: white;
     }
