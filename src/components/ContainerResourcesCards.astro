@@ -23,6 +23,15 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
             display: none;
         }
     }
+
+    @media screen and (max-width: 738px) {
+        .card-text {
+            all: unset !important;
+        }
+        article .tooltip {
+            display: none;
+        }
+    }
     @media screen and (max-width: 420px) {
         section {
             flex-direction: column !important;
@@ -39,22 +48,12 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
             width: 300px !important;
         }
     }
-
     .card {
         border-radius: 8px;
         background: #8e9eab;
-        background: -webkit-linear-gradient(
-            to right,
-            #eef2f3,
-            #8e9eab
-        );
-        background: linear-gradient(
-            to right,
-            #eef2f3,
-            #8e9eab
-        );
+        background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
         color: black;
-        height: fit-content;
     }
 
     .filter {
@@ -73,8 +72,12 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
 
     .card-text {
         width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
     }
 
     dialog[open] {
@@ -91,6 +94,40 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
             scale 0.4s ease,
             display 0.4s ease allow-discrete;
         scale: 0;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 99;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-inline: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    .container-card-text {
+        position: relative;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    .container-card-text:hover + .tooltip {
+        visibility: visible;
+        opacity: 1;
     }
 </style>
 
@@ -145,8 +182,10 @@ const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
                             </button>
                         </form>
                     </dialog>
-
-                    <p class="card-text">{item.description}</p>
+                    <div class="container-card-text w-full">
+                        <p class="card-text">{item.description}</p>
+                    </div>
+                    <p class="tooltip text-xl">{item.description}</p>
                 </div>
             </article>
         ))
