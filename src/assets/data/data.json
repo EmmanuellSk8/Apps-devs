@@ -65,7 +65,7 @@
 },
 
 {
-    "name": "Eloquent JavaScript (En español)",
+    "name": "Eloquent JavaScript(En español)",
     "link": "https://www.eloquentjavascript.es/",
     "img": "https://i.postimg.cc/nrpNFtHz/Enloquent-javascript.webp",
     "category": "paginas",
@@ -317,7 +317,7 @@
     "link": "https://atroposjs.com",
     "img": "https://i.postimg.cc/DfMhc0LJ/atropos.png",
     "category": "npm",
-    "description": "es una biblioteca JavaScript ligera y sin dependencias para crear efectos de parallax 3D interactivos y responsivos"
+    "description": "Es una biblioteca JavaScript ligera y sin dependencias para crear efectos de parallax 3D interactivos y responsivos"
 },
 
 {
@@ -357,7 +357,7 @@
     "link": "https://responsively.app/",
     "img": "https://i.postimg.cc/wvKy3zQ3/Responsively.png",
     "category": "apps",
-    "description": "herramienta de código abierto diseñada para facilitar el desarrollo de aplicaciones web responsivas. Permite previsualizar múltiples dispositivos simultáneamente."
+    "description": "Herramienta de código abierto diseñada para facilitar el desarrollo de aplicaciones web responsivas. Permite previsualizar múltiples dispositivos simultáneamente."
 },
 
 {
@@ -549,7 +549,7 @@
     "link": "https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek",
     "img": "https://i.postimg.cc/RFSHVjy5/css-peek.png",
     "category": "extensiones",
-    "description": "es una extensión gratuita para Visual Studio Code que permite navegar rápidamente entre clases y IDs en archivos HTML, JSX, Vue, Svelte y otros."
+    "description": "Extensión gratuita para Visual Studio Code que permite navegar rápidamente entre clases y IDs en archivos HTML, JSX, Vue, Svelte y otros."
 },
 
 {
@@ -610,7 +610,7 @@
 
 {
     "name": "React DayPicker",
-    "link": "https://www.npmjs.com/package/react-day-picker",
+    "link": "https://daypicker.dev/",
     "img": "https://i.postimg.cc/qq1cKBrc/react-daypicker.png",
     "category": "npm",
     "description": "Componente React para calendarios y selectores de fecha, altamente personalizable y accesible."
@@ -643,9 +643,17 @@
 {
     "name": "CodeSnap",
     "link": "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap",
-    "img": "https://i.postimg.cc/qMYTgksm/codesnap.png",
+    "img": "https://i.postimg.cc/vmC9kPDT/codesnap.png",
     "category": "extensiones",
-    "description": "es una extensión para Visual Studio Code que permite capturar fragmentos de código, también es altamente personalizable."
+    "description": "Extensión para Visual Studio Code que permite capturar fragmentos de código, también es altamente personalizable."
+},
+
+{
+    "name": "CodeSnap",
+    "link": "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap",
+    "img": "https://i.postimg.cc/qMYTgksm/codesnap.png",
+    "category": "paginas",
+    "description": "Página que te permite capturar fragmentos de código de forma sencilla. Solo necesitas pegar tu código en la web y tomar las capturas. Además, ofrece un alto nivel de personalización."
 },
 
 {
@@ -653,7 +661,7 @@
     "link": "https://www.formity.app/",
     "img": "https://i.postimg.cc/HLPY0QXg/formity.png",
     "category": "extensiones",
-    "description": "biblioteca de React para crear formularios multi-paso dinámicos, con lógica condicional avanzada y soporte para bibliotecas como React Hook Form y Formik."
+    "description": "Biblioteca de React para crear formularios multi-paso dinámicos, con lógica condicional avanzada y soporte para bibliotecas como React Hook Form y Formik."
 },
 
 {
@@ -749,7 +757,7 @@
     "link": "https://number-flow.barvian.me/",
     "img": "https://i.postimg.cc/XvGVNrB7/numberflow.png",
     "category": "npm",
-    "description": "biblioteca para animar transiciones numéricas en aplicaciones web, compatible con React, Vue, Svelte y JavaScript puro."
+    "description": "Biblioteca para animar transiciones numéricas en aplicaciones web, compatible con React, Vue, Svelte y JavaScript puro."
 },
 
 {
