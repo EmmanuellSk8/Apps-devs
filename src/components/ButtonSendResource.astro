@@ -6,17 +6,20 @@ import SendIcon from "./icons/SendIcon.astro";
     id="btn-modal"
     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center gap-x-2"
     >Envíanos tu recurso
-
     <SendIcon class="icon size-5 duration-200 ease-in-out" />
 </button>
 
 <dialog
     closedby="any"
     id="modal"
-    class="rounded-lg shadow-lg p-60 z-20 bg-slate-300 flex-wrap"
+    class="overflow-hidden rounded-lg shadow-lg p-52 w-fit 40 z-20 bg-slate-300"
 >
+    <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div></div>
+
     <form method="dialog" class="flex flex-col gap-y-4 w-[300px]">
-        <h2 class="text-2xl font-semibold text-center mb-4">Enviar recurso</h2>
+        <h2 class="text-2xl font-bold text-center mb-4 text-black">
+            Enviar recurso
+        </h2>
         <input
             type="text"
             placeholder="Nombre del recurso"
@@ -39,13 +42,13 @@ import SendIcon from "./icons/SendIcon.astro";
             >Enviar</button
         >
     </form>
-
     <form method="dialog">
         <button
-            class="bg-slate-500 hover:bg-red-600/80 duration-300 mt-4 text-white font-bold py-2 px-4 rounded w-full"
+            class="bg-slate-500 mt-4 hover:bg-red-600/80 duration-300 text-white font-bold py-2 px-4 rounded w-full"
             >cerrar</button
         >
     </form>
+
 </dialog>
 
 <div id="overlay"></div>
@@ -67,7 +70,6 @@ import SendIcon from "./icons/SendIcon.astro";
 </script>
 
 <style>
-
     dialog[open] {
         scale: 1;
         transition: scale 0.4s ease-in-out;
@@ -76,15 +78,14 @@ import SendIcon from "./icons/SendIcon.astro";
             scale: 0;
         }
     }
-
     dialog {
         font-family: "Onest Variable", sans-serif;
         transition:
             scale 0.4s ease,
             display 0.4s ease allow-discrete;
         scale: 0;
+        overflow-y: hidden;
     }
-
     #overlay {
         position: fixed;
         inset: 0;
@@ -93,17 +94,38 @@ import SendIcon from "./icons/SendIcon.astro";
         backdrop-filter: blur(10px);
         z-index: 998;
     }
-
     #overlay.active {
         display: block;
     }
-
     button:hover .icon {
         transform: rotate(45deg);
     }
-
     #btn-modal {
         background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
     }
+     @media screen and (max-width: 770px) {
+        #modal {
+            padding: 120px;
+        }
+    }
 
+    @media screen and (max-width: 580px) {
+        #modal {
+            padding: 60px;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        #modal {
+            padding: 30px;
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        form{
+            width: 100%;
+        }
+
+
+    }
 </style>

@@ -16,7 +16,7 @@
     "@number-flow/react": "^0.5.9",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
-    "astro": "^4.16.16",
+    "astro": "^4.16.18",
     "number-flow": "^0.5.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

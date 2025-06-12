@@ -1,0 +1,206 @@
+---
+import RedirectLinkIcon from "../components/icons/RedirectLinkIcon.astro";
+import rawData from "../assets/data/data.json";
+import ExpandIcon from "../components/icons/ExpandIcon.astro";
+
+const dataSet = rawData.sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<style>
+    @media screen and (max-width: 410px) {
+        #categorySelect {
+            width: 180px;
+        }
+    }
+    @media screen and (max-width: 836px) {
+        section {
+            margin-inline: 0 !important;
+            margin-right: 2rem !important;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .open-modal {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 738px) {
+        .card-text {
+            all: unset !important;
+        }
+        article .tooltip {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        section {
+            flex-direction: column !important;
+            margin-left: -2rem !important;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        section {
+            margin-left: -3rem !important;
+        }
+
+        .card {
+            width: 300px !important;
+        }
+    }
+    .card {
+        border-radius: 8px;
+        background: #8e9eab;
+        background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
+        color: black;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        margin-inline: 64px;
+    }
+
+    img {
+        aspect-ratio: 2/1;
+    }
+
+    .card-text {
+        width: 100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    dialog[open] {
+        scale: 1;
+        transition: scale 0.4s ease-in-out;
+
+        @starting-style {
+            scale: 0;
+        }
+    }
+    dialog {
+        font-family: "Onest Variable", sans-serif;
+        transition:
+            scale 0.4s ease,
+            display 0.4s ease allow-discrete;
+        scale: 0;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 99;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-inline: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    .container-card-text {
+        position: relative;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+    .container-card-text:hover + .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+
+<section>
+    {
+        dataSet.map((item) => (
+            <article
+                class="w-80 border-black border-2 p-4 m-11 card h-fit relative min-h-96 rounded-s-md"
+                data-category={item.category.toLowerCase()}
+            >
+                <div class="flex justify-between mb-4">
+                    <span class="card-title font-semibold cursor-pointer">
+                        {item.name}
+                    </span>
+                    <a href={item.link} target="_blank">
+                        <RedirectLinkIcon
+                            slot="slot-link"
+                            class="hover:scale-125 duration-300"
+                        />
+                    </a>
+                </div>
+                <button
+                    title="Agrandar imagen"
+                    class="open-modal w-full bg-slate-800 py-2 text-white flex items center justify-between px-3 mb-3 rounded-md"
+                >
+                    Ampliar imagen <ExpandIcon class="size-7 text-white" />
+                </button>
+
+                <div class="mb-4 hover:scale-105 ease-in-out duration-300 cursor-pointer">
+                    <img
+                        src={item.img}
+                        alt="Verifique su conexión a internet"
+                        slot="slot-img"
+                        class="rounded-md"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="w-full">
+                    <dialog
+                        closedby="any"
+                        class="modal rounded-lg shadow-lg z-20 bg-slate-300 p-4 overflow-y-hidden"
+                    >
+                        <img
+                            src={item.img}
+                            alt={item.name}
+                            class="rounded-md"
+                            loading="lazy"
+                        />
+                        <form method="dialog">
+                            <button class="bg-slate-500 hover:bg-red-600 mt-4 text-white font-bold py-2 px-4 rounded w-full">
+                                cerrar
+                            </button>
+                        </form>
+                    </dialog>
+                    <div class="container-card-text w-full">
+                        <p class="card-text">{item.description}</p>
+                    </div>
+                    <p class="tooltip text-xl">{item.description}</p>
+                </div>
+            </article>
+        ))
+    }
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".open-modal").forEach((button) => {
+            button.addEventListener("click", () => {
+                const dialog = button
+                    .closest("article")
+                    .querySelector("dialog");
+                if (dialog) dialog.showModal();
+            });
+        });
+    });
+</script>

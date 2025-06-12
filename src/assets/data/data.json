@@ -4,7 +4,7 @@
     "name": "10015",
     "link": "https://10015.io/",
     "img": "https://i.postimg.cc/YSGnkPkF/10015.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de herramientas en línea para diseñadores y desarrolladores, desde generación de gradientes hasta manipulación de texto."
 },
 
@@ -12,7 +12,7 @@
     "name": "bg.ibelick",
     "link": "https://bg.ibelick.com/",
     "img": "https://i.postimg.cc/2jh53jTc/bg-ibelick.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Generador de gradientes en línea que permite crear fondos personalizados con múltiples opciones de colores y estilos, ofreciendo previsualización y exportación en CSS."
 },
 
@@ -20,7 +20,7 @@
     "name": "clean code JavaScript",
     "link": "https://github.com/ryanmcdermott/clean-code-javascript",
     "img": "https://i.postimg.cc/8cJMf2Kd/clean-code-javascript.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Repositorio con mejores prácticas y principios de 'código limpio' adaptados para JavaScript."
 },
 
@@ -28,7 +28,7 @@
     "name": "coderbyte",
     "link": "https://coderbyte.com/developers",
     "img": "https://i.postimg.cc/4nR77mhZ/coder-byte.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma de evaluación técnica con retos de codificación, ideal para entrevistas y preparación profesional."
 },
 
@@ -36,7 +36,7 @@
     "name": "Cool Contrast",
     "link": "https://coolcontrast.vercel.app/",
     "img": "https://i.postimg.cc/dQkWz3w0/cool-contrast.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta para verificar y ajustar el contraste de colores según las pautas de accesibilidad."
 },
 
@@ -44,7 +44,7 @@
     "name": "coolors",
     "link": "https://coolors.co/gradients",
     "img": "https://i.postimg.cc/6qM5rcq9/coolors.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Generador de combinaciones y gradientes de colores para proyectos de diseño gráfico y web."
 },
 
@@ -52,7 +52,7 @@
     "name": "dev challenges",
     "link": "https://devchallenges.io/",
     "img": "https://i.postimg.cc/tC1Hvpmd/dev-challenges.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma para mejorar habilidades de desarrollo frontend y backend a través de retos prácticos."
 },
 
@@ -60,15 +60,15 @@
     "name": "dev docs",
     "link": "https://devdocs.io/",
     "img": "https://i.postimg.cc/T2KRFVKW/dev-docs.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de documentación para desarrolladores con acceso rápido y búsqueda unificada."
 },
 
 {
-    "name": "Eloquent JavaScript (En español)",
+    "name": "Eloquent JavaScript(En español)",
     "link": "https://www.eloquentjavascript.es/",
     "img": "https://i.postimg.cc/nrpNFtHz/Enloquent-javascript.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Libro 'Eloquent JavaScript' traducido totalmente a español."
 },
 
@@ -76,7 +76,7 @@
     "name": "Exercism",
     "link": "https://exercism.org/",
     "img": "https://i.postimg.cc/cJKvmpGr/exercism.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma educativa que ofrece ejercicios prácticos y guías para aprender programación en varios lenguajes."
 },
 
@@ -84,7 +84,7 @@
     "name": "FreeCodeCamp",
     "link": "https://www.freecodecamp.org/",
     "img": "https://i.postimg.cc/MKWX4M8k/free-code-camp.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma de aprendizaje en línea gratuita para aprender desarrollo web, análisis de datos y más."
 },
 
@@ -92,7 +92,7 @@
     "name": "Gradient Hunt",
     "link": "https://gradienthunt.com/",
     "img": "https://i.postimg.cc/TwJfq01K/gradient-hunt.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Comunidad y galería de gradientes de colores modernos creados por diseñadores de todo el mundo."
 },
 
@@ -100,7 +100,7 @@
     "name": "Gradient Magic",
     "link": "https://www.gradientmagic.com/browse",
     "img": "https://i.postimg.cc/HnnRc9yD/gradient-magic.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Repositorio de gradientes creativos y únicos para usar en diseños web, con opciones de exportación personalizables."
 },
 
@@ -108,7 +108,7 @@
     "name": "HackerRank",
     "link": "https://www.hackerrank.com/",
     "img": "https://i.postimg.cc/15L2X6R2/hacker-rank.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Sitio web con desafíos de programación y concursos para mejorar habilidades técnicas y prepararse para entrevistas."
 },
 
@@ -116,7 +116,7 @@
     "name": "HTML Dog",
     "link": "https://htmldog.com/",
     "img": "https://i.postimg.cc/LXbv7Knw/html-dog.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Sitio educativo con tutoriales y ejemplos para aprender HTML, CSS y JavaScript."
 },
 
@@ -124,7 +124,7 @@
     "name": "LeetCode",
     "link": "https://leetcode.com/",
     "img": "https://i.postimg.cc/4ycMQNBB/leet-code.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma de retos de programación centrados en la resolución de problemas y entrevistas técnicas."
 },
 
@@ -132,7 +132,7 @@
     "name": "MagicPattern",
     "link": "https://www.magicpattern.design/tools/css-backgrounds",
     "img": "https://i.postimg.cc/v8nDxjp3/magic-pattern.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta para generar fondos CSS con patrones y gradientes modernos para sitios web."
 },
 
@@ -140,7 +140,7 @@
     "name": "PUBLIC APIS",
     "link": "https://publicapis.dev/",
     "img": "https://i.postimg.cc/xdWn0jTY/public-apis.webp",
-    "category": "api",
+    "category": "apis",
     "description": "Directorio de APIs públicas organizadas por categorías para facilitar su exploración e implementación."
 },
 
@@ -148,7 +148,7 @@
     "name": "RAPID API",
     "link": "https://rapidapi.com/",
     "img": "https://i.postimg.cc/KYghsX7W/Rapid-api.webp",
-    "category": "api",
+    "category": "apis",
     "description": "Plataforma unificada para descubrir, probar e integrar miles de APIs desde una sola cuenta, con herramientas para desarrolladores y monitoreo centralizado."
 },
 
@@ -156,7 +156,7 @@
     "name": "removebg",
     "link": "https://www.remove.bg/es/upload",
     "img": "https://i.postimg.cc/8Pq2JXgB/remove-bg.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Eliminador automático de fondos en imágenes, ideal para crear recursos gráficos limpios y profesionales."
 },
 
@@ -164,7 +164,7 @@
     "name": "developer roadmap",
     "link": "https://roadmap.sh/",
     "img": "https://i.postimg.cc/tCWj5G5m/road-map.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Guías visuales para aprender y desarrollar habilidades en diversas áreas de la programación."
 },
 
@@ -172,7 +172,7 @@
     "name": "Shots",
     "link": "https://www.shots.so/",
     "img": "https://i.postimg.cc/mr6J4mjH/shots.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma para diseñadores que permite crear capturas de pantallas atractivas y presentarlas con estilo profesional."
 },
 
@@ -180,7 +180,7 @@
     "name": "Squoosh",
     "link": "https://squoosh.app/",
     "img": "https://i.postimg.cc/nzDRJpMy/squoosh.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta web para comprimir y optimizar imágenes con control detallado de calidad y formatos."
 },
 
@@ -188,7 +188,7 @@
     "name": "SVG Backgrounds",
     "link": "https://www.svgbackgrounds.com/",
     "img": "https://i.postimg.cc/zvkkzBNc/svg-bg.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de fondos SVG personalizables para diseños web únicos."
 },
 
@@ -196,7 +196,7 @@
     "name": "SVGL",
     "link": "https://svgl.app/",
     "img": "https://i.postimg.cc/28c42gSh/svgl.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Editor visual para crear y modificar gráficos vectoriales en formato SVG de manera sencilla."
 },
 
@@ -204,7 +204,7 @@
     "name": "Tailwind css animated",
     "link": "https://www.tailwindcss-animated.com/",
     "img": "https://i.postimg.cc/9X1TQsTK/tailwind-css-animated.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Conjunto de clases utilitarias para agregar animaciones predefinidas a proyectos que usan Tailwind CSS."
 },
 
@@ -212,7 +212,7 @@
     "name": "Tailwind Generator",
     "link": "https://tailwind-generator.com/",
     "img": "https://i.postimg.cc/0QPM8CN9/tailwind-generator.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta para generar código Tailwind CSS con configuraciones visuales y en tiempo real."
 },
 
@@ -220,7 +220,7 @@
     "name": "The Stocks",
     "link": "https://v3.thestocks.im/",
     "img": "https://i.postimg.cc/wBd3VkLD/the-stocks.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "The Stocks es una plataforma que agrupa recursos gratuitos de imágenes, videos, íconos y fuentes para diseñadores, facilitando el acceso a contenido de calidad desde una sola página."
 },
 
@@ -228,7 +228,7 @@
     "name": "UI Gradients",
     "link": "https://uigradients.com/#Portrait",
     "img": "https://i.postimg.cc/ZYj7z7qK/ui-gradients.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de gradientes de colores curados para diseñadores, con códigos CSS listos para copiar y usar."
 },
 
@@ -236,7 +236,7 @@
     "name": "UIVerse switches",
     "link": "https://uiverse.io/switches",
     "img": "https://i.postimg.cc/pV9Z323k/ui-verse.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Galería interactiva de componentes UI modernos, incluyendo switches personalizables."
 },
 
@@ -244,7 +244,7 @@
     "name": "W3 Schools",
     "link": "https://www.w3schools.com/",
     "img": "https://i.postimg.cc/02swZPvz/w3-schools.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Sitio web educativo con tutoriales, ejemplos y documentación sobre programación, diseño web y desarrollo."
 },
 
@@ -252,7 +252,7 @@
     "name": "WebGradients",
     "link": "https://webgradients.com/",
     "img": "https://i.postimg.cc/hP2txBtW/web-gradients.webp",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de gradientes listos para usar con opciones de exportación en CSS, SVG y PNG."
 },
 
@@ -260,7 +260,7 @@
     "name": "Mobile simulator",
     "link": "https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?hl=es-419",
     "img": "https://i.postimg.cc/26gXg3GR/mobile-simulator.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión para simular dispositivos móviles y probar la responsividad de sitios web en navegadores."
 },
 
@@ -268,7 +268,7 @@
     "name": "Auto close tag",
     "link": "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag",
     "img": "https://i.postimg.cc/5tddQ7LW/auto-close-tag.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión para visual studio code que completa automáticamente las etiquetas HTML y XML."
 },
 
@@ -276,7 +276,7 @@
     "name": "Console Ninja",
     "link": "https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja",
     "img": "https://i.postimg.cc/rF377nhR/console-ninja.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión para depuración avanzada en la consola de JavaScript dentro de visual studio code."
 },
 
@@ -284,7 +284,7 @@
     "name": "Error lens",
     "link": "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens",
     "img": "https://i.postimg.cc/brdFBkkR/error-lens.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión para mostrar errores y advertencias de manera visual y destacada dentro del editor."
 },
 
@@ -292,7 +292,7 @@
     "name": "Image preview",
     "link": "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview",
     "img": "https://i.postimg.cc/hjtCXTyq/image-preview.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión que permite previsualizar imágenes directamente en el editor de visual studio code."
 },
 
@@ -300,7 +300,7 @@
     "name": "Live preview",
     "link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server",
     "img": "https://i.postimg.cc/L8kvvNGp/live-preview.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión que permite previsualizar cambios en proyectos HTML directamente desde visual studio code."
 },
 
@@ -308,7 +308,7 @@
     "name": "Live server",
     "link": "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
     "img": "https://i.postimg.cc/YC7TpGHt/live-server.webp",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión para ejecutar proyectos web en un servidor local con actualización automática en tiempo real."
 },
 
@@ -317,7 +317,7 @@
     "link": "https://atroposjs.com",
     "img": "https://i.postimg.cc/DfMhc0LJ/atropos.png",
     "category": "npm",
-    "description": "es una biblioteca JavaScript ligera y sin dependencias para crear efectos de parallax 3D interactivos y responsivos"
+    "description": "Es una biblioteca JavaScript ligera y sin dependencias para crear efectos de parallax 3D interactivos y responsivos"
 },
 
 {
@@ -332,7 +332,7 @@
     "name": "Flowbite",
     "link": "https://flowbite.com/",
     "img": "https://i.postimg.cc/xTpP8DrS/flowbite.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Esta página nos proporciona componentes UI basados en Tailwind CSS."
 },
 
@@ -340,7 +340,7 @@
     "name": "Free for Developers",
     "link": "https://free-for.dev/#/",
     "img": "https://i.postimg.cc/mDZc7kMp/Free-for-devs.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Esta página nos brinda una gran lista  de servicios para desarrolladores, como cloud, IA, APIS y más."
 },
 
@@ -348,7 +348,7 @@
     "name": "transform",
     "link": "https://transform.tools/",
     "img": "https://i.postimg.cc/htqVfSC6/transform.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Conversor web multilenguaje para transformar código entre formatos como JSON, HTML, CSS y más."
 },
 
@@ -356,15 +356,15 @@
     "name": "Responsively",
     "link": "https://responsively.app/",
     "img": "https://i.postimg.cc/wvKy3zQ3/Responsively.png",
-    "category": "app",
-    "description": "herramienta de código abierto diseñada para facilitar el desarrollo de aplicaciones web responsivas. Permite previsualizar múltiples dispositivos simultáneamente."
+    "category": "apps",
+    "description": "Herramienta de código abierto diseñada para facilitar el desarrollo de aplicaciones web responsivas. Permite previsualizar múltiples dispositivos simultáneamente."
 },
 
 {
     "name": "Easing Gradients",
     "link": "https://larsenwork.com/easing-gradients/",
     "img": "https://i.postimg.cc/CKGPzPHH/easing-gradients.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Esta página te ayuda para que puedas crear tus propios gradientes."
 },
 
@@ -372,7 +372,7 @@
     "name": "Neumorphism",
     "link": "https://neumorphism.io/",
     "img": "https://i.postimg.cc/sXnkwjHg/neumorphism.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Generador de sombras CSS para diseño neumórfico, con vista previa interactiva."
 },
 
@@ -380,7 +380,7 @@
     "name": "cssbuttons",
     "link": "https://cssbuttons.app/",
     "img": "https://i.postimg.cc/KvVgCt3n/cssbuttons.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de más de 60 botones CSS listos para usar, totalmente personalizables."
 },
 
@@ -396,7 +396,7 @@
     "name": "Phedra X",
     "link": "https://chromewebstore.google.com/detail/Phedra%20X:%20Revisualize%20%26%20Edit%20Images%20From%20Web/jckigdhmponckmebbhbfenjmofkklnif",
     "img": "https://i.postimg.cc/4ynHppXW/phedra-x.png",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Inteligencia artificial que permite crear imágenes a partir de otras,libre de drechos de autor"
 },
 
@@ -404,7 +404,7 @@
     "name": "collect UI.",
     "link": "https://collectui.com/",
     "img": "https://i.postimg.cc/PfQg6McR/collect-ui.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma con inspiración visual en diseño de interfaces, basada en retos diarios y UI modernas."
 },
 
@@ -412,7 +412,7 @@
     "name": "SQLBolt",
     "link": "https://sqlbolt.com/",
     "img": "https://i.postimg.cc/L5533RGR/sqlbolt.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma interactiva para aprender SQL desde el navegador, con lecciones prácticas y ejercicios guiados."
 },
 
@@ -420,7 +420,7 @@
     "name": "ChartDB",
     "link": "https://chartdb.io/",
     "img": "https://i.postimg.cc/Hn3sd1LJ/chartdb.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Editor y visualizador de diagramas de bases de datos, open source y basado en navegador, con importación instantánea y exportación DDL."
 },
 
@@ -428,7 +428,7 @@
     "name": "tabler icons",
     "link": "https://tabler.io/icons",
     "img": "https://i.postimg.cc/HLCGZPpF/tabler.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de más de 5900 íconos SVG gratuitos y personalizables, compatibles con múltiples frameworks."
 },
 
@@ -444,7 +444,7 @@
     "name": "Google Fonts Icons",
     "link": "https://fonts.google.com/icons",
     "img": "https://i.postimg.cc/GtPzpq0T/google-fonts-icons.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de más de 2500 íconos SVG y de fuente, personalizables con variantes de diseño."
 },
 
@@ -452,7 +452,7 @@
     "name": "iconoir",
     "link": "https://iconoir.com/",
     "img": "https://i.postimg.cc/cHxLjJxq/iconoir.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca open source con más de 1600 íconos SVG, disponible para React, Flutter, Figma y más."
 },
 
@@ -468,7 +468,7 @@
     "name": "AnimatedIcons",
     "link": "https://animatedicons.co/icons/minimalistic?type=free",
     "img": "https://i.postimg.cc/mDf52ccq/animated-icons.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección gratuita de íconos animados en Lottie, SVG y PNG, personalizables y optimizados para web y móvil."
 },
 
@@ -476,7 +476,7 @@
     "name": "CSS GG",
     "link": "https://css.gg/",
     "img": "https://i.postimg.cc/6pTWCPHK/cssgg.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de más de 700 íconos en CSS puro y SVG, personalizables."
 },
 
@@ -484,7 +484,7 @@
     "name": "heroicons",
     "link": "https://heroicons.com/",
     "img": "https://i.postimg.cc/L6gRXPh4/heroicons.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de íconos SVG gratuitos y optimizados, para proyectos web y apps."
 },
 
@@ -492,7 +492,7 @@
     "name": "HTMLRev",
     "link": "https://htmlrev.com/",
     "img": "https://i.postimg.cc/k5LMwy2H/htmlrev.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma con más de 1500 plantillas HTML y frameworks; gratuitas y responsive para diversos tipos de proyectos web."
 },
 
@@ -500,7 +500,7 @@
     "name": "AnimatiSS",
     "link": "https://xsgames.co/animatiss/",
     "img": "https://i.postimg.cc/BvbC92qs/animatiss.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Biblioteca de animaciones CSS y SVG listas para usar, para proyectos web y apps."
 },
 
@@ -508,7 +508,7 @@
     "name": "imgto.xyz",
     "link": "https://imgto.xyz/",
     "img": "https://i.postimg.cc/prLWqVf0/imgto-xyz.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta web para convertir imágenes a formatos optimizados para la web."
 },
 
@@ -516,7 +516,7 @@
     "name": "magecdn",
     "link": "https://magecdn.com/tools/svg-loaders",
     "img": "https://i.postimg.cc/RVb71N7D/magecdn.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Galería de loaders SVG animados, listos para integrar en proyectos."
 },
 
@@ -524,7 +524,7 @@
     "name": "Flexbox Labs",
     "link": "https://flexboxlabs.netlify.app/",
     "img": "https://i.postimg.cc/CxTQCPHt/flexbox-labs.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Sandbox interactivo para experimentar con CSS Flexbox y entender su comportamiento."
 },
 
@@ -540,7 +540,7 @@
     "name": "JSON Crack",
     "link": "https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode",
     "img": "https://i.postimg.cc/6QGSCkFD/json-crack.png",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Herramienta open source que convierte datos JSON, YAML, CSV, XML y TOML en gráficos interactivos."
 },
 
@@ -548,15 +548,15 @@
     "name": "CSS Peek",
     "link": "https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek",
     "img": "https://i.postimg.cc/RFSHVjy5/css-peek.png",
-    "category": "extension",
-    "description": "es una extensión gratuita para Visual Studio Code que permite navegar rápidamente entre clases y IDs en archivos HTML, JSX, Vue, Svelte y otros."
+    "category": "extensiones",
+    "description": "Extensión gratuita para Visual Studio Code que permite navegar rápidamente entre clases y IDs en archivos HTML, JSX, Vue, Svelte y otros."
 },
 
 {
     "name": "JSON Crack",
     "link": "https://jsoncrack.com/converter/json-to-yaml",
     "img": "https://i.postimg.cc/PqRSVSn1/json-crack-converter.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Esta herramienta facilita la transformación entre diferentes formatos de datos, como de JSON a CSV, YAML a JSON, XML a JSON, entre otros."
 },
 
@@ -564,7 +564,7 @@
     "name": "Frontend Practice",
     "link": "https://www.frontendpractice.com/",
     "img": "https://i.postimg.cc/0jRRFk1G/frontend-practice.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Plataforma con proyectos reales para practicar desarrollo frontend mediante la recreación de sitios web."
 },
 
@@ -580,7 +580,7 @@
     "name": "CSS Loaders",
     "link": "https://css-loaders.com/classic/",
     "img": "https://i.postimg.cc/x1xd7zxK/css-loaders.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de más de 600 animaciones de carga en CSS puro, listas para usar."
 },
 
@@ -596,7 +596,7 @@
     "name": "drawSQL",
     "link": "https://drawsql.app/",
     "img": "https://i.postimg.cc/YSF47ryn/drawsql.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta colaborativa para diseñar y documentar esquemas de bases de datos con diagramas visuales."
 },
 
@@ -610,7 +610,7 @@
 
 {
     "name": "React DayPicker",
-    "link": "https://www.npmjs.com/package/react-day-picker",
+    "link": "https://daypicker.dev/",
     "img": "https://i.postimg.cc/qq1cKBrc/react-daypicker.png",
     "category": "npm",
     "description": "Componente React para calendarios y selectores de fecha, altamente personalizable y accesible."
@@ -620,7 +620,7 @@
     "name": "LaLoka Layouts",
     "link": "https://layoutsfortailwind.lalokalabs.dev/",
     "img": "https://i.postimg.cc/N0DTQr12/laloka-layouts.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de patrones y layouts responsive listos para usar con Tailwind CSS."
 },
 
@@ -628,7 +628,7 @@
     "name": "Squish",
     "link": "https://squish.addy.ie/",
     "img": "https://i.postimg.cc/WpFSTT4p/squish.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta web para compresión y optimización de imágenes por lotes, compatible con AVIF, JPEG, PNG y más."
 },
 
@@ -643,24 +643,32 @@
 {
     "name": "CodeSnap",
     "link": "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap",
+    "img": "https://i.postimg.cc/vmC9kPDT/codesnap.png",
+    "category": "extensiones",
+    "description": "Extensión para Visual Studio Code que permite capturar fragmentos de código, también es altamente personalizable."
+},
+
+{
+    "name": "CodeSnap",
+    "link": "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap",
     "img": "https://i.postimg.cc/qMYTgksm/codesnap.png",
-    "category": "extension",
-    "description": "es una extensión para Visual Studio Code que permite capturar fragmentos de código, también es altamente personalizable."
+    "category": "paginas",
+    "description": "Página que te permite capturar fragmentos de código de forma sencilla. Solo necesitas pegar tu código en la web y tomar las capturas. Además, ofrece un alto nivel de personalización."
 },
 
 {
     "name": "Formity",
     "link": "https://www.formity.app/",
     "img": "https://i.postimg.cc/HLPY0QXg/formity.png",
-    "category": "extension",
-    "description": "biblioteca de React para crear formularios multi-paso dinámicos, con lógica condicional avanzada y soporte para bibliotecas como React Hook Form y Formik."
+    "category": "extensiones",
+    "description": "Biblioteca de React para crear formularios multi-paso dinámicos, con lógica condicional avanzada y soporte para bibliotecas como React Hook Form y Formik."
 },
 
 {
     "name": "pqoqubbw/icons",
     "link": "https://icons.pqoqubbw.dev/",
     "img": "https://i.postimg.cc/0jsL7QWv/pqoqubbw-icons.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección open source de íconos animados SVG, suaves y personalizables, compatibles con Lucide y Motion."
 },
 
@@ -668,7 +676,7 @@
     "name": "GitLens",
     "link": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
     "img": "https://i.postimg.cc/9MVpp7hL/gitlens.png",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión avanzada para Git que proporciona anotaciones, historial y visualizaciones interactivas directamente en el editor."
 },
 
@@ -676,7 +684,7 @@
     "name": "Path Intellisense",
     "link": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense",
     "img": "https://i.postimg.cc/90BF7sBx/path-intellisense.png",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Extensión que autocompleta rutas de archivos en tiempo real, facilitando la importación y navegación en proyectos."
 },
 
@@ -684,7 +692,7 @@
     "name": "Material Icon Theme",
     "link": "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
     "img": "https://i.postimg.cc/yNq47vmW/material-icon-theme.png",
-    "category": "extension",
+    "category": "extensiones",
     "description": "Tema de íconos basado en Material Design que mejora la visualización de archivos y carpetas en el explorador de visual studio Code."
 },
 
@@ -692,7 +700,7 @@
     "name": "ihancer",
     "link": "https://ihancer.com/",
     "img": "https://i.postimg.cc/BbF77Gzg/ihancer.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Aplicación web y móvil que mejora automáticamente la calidad de imágenes usando inteligencia artificial."
 },
 
@@ -716,7 +724,7 @@
     "name": "transition.css",
     "link": "https://www.transition.style/",
     "img": "https://i.postimg.cc/hjL72yrm/transition-css.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de transiciones CSS con clip-path, listas para usar y personalizables."
 },
 
@@ -732,7 +740,7 @@
     "name": "Color Palettes",
     "link": "https://colorpalettes.com/",
     "img": "https://i.postimg.cc/rpdHRW93/color-palettes.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Colección de paletas de colores para diseñadores y desarrolladores, con herramientas para crear y guardar combinaciones."
 },
 
@@ -740,7 +748,7 @@
     "name": "HTML Colors",
     "link": "https://htmlcolors.com/",
     "img": "https://i.postimg.cc/2SNyKF1F/html-colors.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Herramienta web para explorar y generar códigos de color en formatos HEX, RGB, HSL y más."
 },
 
@@ -749,7 +757,7 @@
     "link": "https://number-flow.barvian.me/",
     "img": "https://i.postimg.cc/XvGVNrB7/numberflow.png",
     "category": "npm",
-    "description": "biblioteca para animar transiciones numéricas en aplicaciones web, compatible con React, Vue, Svelte y JavaScript puro."
+    "description": "Biblioteca para animar transiciones numéricas en aplicaciones web, compatible con React, Vue, Svelte y JavaScript puro."
 },
 
 {
@@ -772,7 +780,7 @@
     "name": "Tailwind Play",
     "link": "https://play.tailwindcss.com/",
     "img": "https://i.postimg.cc/76SXkNx1/tailwind-play.png",
-    "category": "pagina",
+    "category": "paginas",
     "description": "Es un editor en línea oficial de Tailwind CSS que permite escribir, previsualizar y compartir código en tiempo real, sin necesidad de configuración local."
 }
 
